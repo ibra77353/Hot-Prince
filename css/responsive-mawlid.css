@@ -1,0 +1,114 @@
+/* =========================================================
+   NETWORK RESPONSIVE LAYER
+   Responsive behavior only.
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+video,
+canvas,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.screen,
+.container,
+.main-container,
+.login-container {
+    max-width: 100%;
+}
+
+.screen {
+    width: min(360px, calc(100vw - 24px));
+    height: auto;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-form {
+    width: min(320px, calc(100% - 24px));
+    margin: 5px;
+    padding: 5px;
+}
+
+button,
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+@media (max-width: 380px) {
+    .screen {
+        width: calc(100vw - 12px);
+        min-height: 0;
+    }
+
+
+
+    .date-field {
+        font-size: clamp(11px, 3.4vw, 14px);
+    }
+
+    #hcg-slider-1 .hcg-slide-container {
+        width: 90%;
+        padding: 6px;
+        border-radius: 14px;
+    }
+
+    #login .login-actions {
+        gap: 4px;
+    }
+
+    #login .login-actions .button {
+        font-size: 11px;
+    }
+
+    #status .status-login-actions,
+    #status .status-extra-actions {
+        gap: 6px;
+    }
+
+    #status .status-login-actions button,
+    #status .status-extra-actions .extra-submit {
+        height: 40px !important;
+        font-size: 13px;
+    }
+
+    #status .status-whatsapp {
+        margin-top: 6px !important;
+    }
+}
+
+@media (min-width: 381px) and (max-width: 600px) {
+    .screen {
+        width: min(390px, calc(100vw - 20px));
+    }
+}
+
+@media (min-width: 601px) {
+    .screen {
+        width: 360px;
+    }
+}
+
+@media (max-height: 520px) and (orientation: landscape) {
+    .screen {
+        min-height: 0;
+        height: auto;
+    }
+}
