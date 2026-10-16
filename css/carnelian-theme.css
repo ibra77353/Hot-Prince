@@ -375,22 +375,32 @@ table td:first-child {
 /* ===== السلايدر ===== */
 #hcg-slider-1 .hcg-slide-container {
     background: linear-gradient(145deg, var(--carnelian-bg), var(--carnelian-bg-deep)) !important;
-    border: 1px solid var(--carnelian-border) !important;
+    border: 1.5px solid var(--carnelian-border) !important;
     border-radius: 14px !important;
-    box-shadow: var(--carnelian-shadow) !important;
+    box-shadow: inset 0 1px 0 rgba(255,248,238,.10), 0 4px 14px rgba(43,13,18,.24) !important;
+    font-family: var(--carnelian-font) !important;
+    transition: all .3s ease !important;
 }
 .hcg-slide-dot {
-    background-color: rgba(255,248,238,.3) !important;
+    background-color: rgba(255,248,238,.25) !important;
+    border: 1px solid rgba(226,184,104,.3) !important;
+    transition: all .3s ease !important;
 }
 .hcg-slide-dot.dot-active {
-    background-color: var(--carnelian-gold) !important;
-    box-shadow: 0 0 5px rgba(226,184,104,.55) !important;
+    background: linear-gradient(135deg, var(--carnelian-gold), var(--carnelian-pale-gold)) !important;
+    border-color: var(--carnelian-gold) !important;
+    box-shadow: 0 0 6px rgba(226,184,104,.6), 0 0 0 2px rgba(226,184,104,.15) !important;
 }
 #hcg-slider-1 .hcg-slides img,
 #hcg-slider-1 .hcg-slides video {
-    border: 1px solid rgba(226,184,104,.6) !important;
+    border: 1.5px solid var(--carnelian-border) !important;
     border-radius: 12px !important;
-    box-shadow: 0 5px 16px rgba(43,13,18,.2) !important;
+    box-shadow: inset 0 1px 0 rgba(255,248,238,.08), 0 5px 16px rgba(43,13,18,.25) !important;
+}
+.hcg-slider-body p.title {
+    font-family: var(--carnelian-font) !important;
+    color: var(--carnelian-pale-gold) !important;
+    text-shadow: 0 1px 3px rgba(43,13,18,.7) !important;
 }
 
 /* ===== شريط التمرير ===== */
