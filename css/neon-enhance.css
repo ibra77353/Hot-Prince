@@ -427,28 +427,10 @@ body::before {
     filter: drop-shadow(0 0 4px rgba(242, 201, 76, .5));
 }
 
-#login .login-actions .price-icon {
-    background: linear-gradient(135deg, rgba(242, 201, 76, .25), rgba(242, 201, 76, .08), rgba(5, 5, 16, .6)) !important;
-}
-
-#login .login-actions .price-icon .btn-icon {
-    filter: drop-shadow(0 0 6px rgba(242, 201, 76, .6));
-}
-
-#login .login-actions .sell-point-icon {
-    background: linear-gradient(135deg, rgba(0, 212, 255, .22), rgba(0, 212, 255, .06), rgba(5, 5, 16, .6)) !important;
-}
-
-#login .login-actions .sell-point-icon .btn-icon {
-    filter: drop-shadow(0 0 6px rgba(0, 212, 255, .6));
-}
-
+#login .login-actions .price-icon,
+#login .login-actions .sell-point-icon,
 #login .login-actions .sell-point-icon:last-child {
-    background: linear-gradient(135deg, rgba(0, 212, 255, .15), rgba(242, 201, 76, .15), rgba(5, 5, 16, .6)) !important;
-}
-
-#login .login-actions .sell-point-icon:last-child .btn-icon {
-    filter: drop-shadow(0 0 6px rgba(0, 212, 255, .5));
+    background: var(--neon-bg) !important;
 }
 
 /* ===== Reduced Motion ===== */
