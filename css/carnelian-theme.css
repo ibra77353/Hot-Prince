@@ -146,14 +146,22 @@ div.wrapper {
 
 /* ===== معلومات المباريات ===== */
 .match-info {
-    background: var(--carnelian-bg) !important;
-    border: 1px solid rgba(226,184,104,.5) !important;
+    background: linear-gradient(115deg, var(--carnelian-bg), var(--carnelian-bg-light)) !important;
+    border: 1.5px solid var(--carnelian-border) !important;
     border-radius: 10px !important;
     color: var(--carnelian-ivory) !important;
-    box-shadow: var(--carnelian-shadow) !important;
+    box-shadow: inset 0 1px 0 rgba(255,248,238,.10), 0 3px 10px rgba(43,13,18,.22) !important;
+    font-family: var(--carnelian-font) !important;
+    font-weight: 600 !important;
+    letter-spacing: .3px !important;
+    text-shadow: 0 1px 2px rgba(43,13,18,.5) !important;
+    transition: all .3s ease !important;
 }
 .match-info span {
     color: var(--carnelian-pale-gold) !important;
+    font-weight: 700 !important;
+    font-family: var(--carnelian-font) !important;
+    text-shadow: 0 1px 2px rgba(43,13,18,.5) !important;
 }
 
 /* ===== زر تسجيل الدخول ===== */
