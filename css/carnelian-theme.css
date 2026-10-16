@@ -423,7 +423,7 @@ div.wrapper::-webkit-scrollbar-thumb {
 
 /* ===== قسم الأسعار — رفع للأعلى ===== */
 #price {
-    margin-top: -20px !important;
+    margin-top: -40px !important;
 }
 
 /* ===== أزرار العودة والتواصل (social-login) ===== */
