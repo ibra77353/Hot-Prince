@@ -1,11 +1,8 @@
 Config({
     "network-name": "البرنس",
     "service-number": "773537707",
-    "popup-adv-time": 5,
-    "popup-adv-img-type": true,
-    "popup-adv-repeat-after": 120,
     "login-type": "passwordAsUser",
-    "news-line": "...:::: اهلاً بكم على شبكتنا اللاسلكية تتميز شبكتنا بتقديم مزايا مختلفة لمشتركيها الاعزاء منها السرعة في التصفح ولعب الألعاب والإستراحة الشاملة والبث المباشر للمباريات ايضاً نقدم خدمة توصيل الانترنت الى المنازل لسنا الوحيدون ولكن نسعى لتقديم خدمة ممتازة على مدار 24 ساعة::::...",
+    "news-line": "...:::: أهلاً بكم في شبكتنا اللاسلكية، تتميز شبكتنا بتقديم مزايا مختلفة لمشتركيها الأعزاء، منها السرعة في التصفح ولعب الألعاب والاستراحة الشاملة والبث المباشر للمباريات، أيضاً نقدم خدمة توصيل الإنترنت إلى المنازل، لسنا الوحيدين ولكن نسعى لتقديم خدمة ممتازة على مدار 24 ساعة::::...",
     "input-type": "text",
     "input-autocomplete": "on",
     "input-rm-white-spaces": 1,
@@ -23,15 +20,12 @@ Config({
     "block-time": 1,
     "try-count": 5,
     "warn-when": 3,
-    "warn-message": "تحذير !! عدد محاولاتك الخاطئة اصبح {{tryCounter}} محاولات, عدد المحاولات المسموح بها هي {{tryCount}} محاولات فقط, عدد محاولاتك المتبقية {{restTryCount}} محاولات, سيتم حظرك لمدة {{blockTime}} دقائق اذا تجاوزت العدد المسموح للمحاولات",
+    "warn-message": "تحذير! عدد محاولاتك الخاطئة أصبح {{tryCounter}} محاولات، الحد المسموح به {{tryCount}} محاولات فقط، المتبقي لك {{restTryCount}} محاولات، سيتم حظر الوصول لمدة {{blockTime}} دقائق عند تجاوز الحد المسموح",
     "price-button": true,
     "sell-point-button": true,
-    "app-store-status-button": false,
     "show-date-field": true,
-    "loan-button": true,
     "redirect-to-esterahah": "",// orWithProtocol: ex, https://google.com leave it blank if dont need esterahah button
     "redirect-to-mobasher": "http://10.10.10.10",
-    "app-store-base-url": "",// orWithProtocol: ex, http://192.168.10.10/app/ // leave it blank if locally
     "profiles": [
         {
             "price": "100 ريال",
@@ -70,7 +64,7 @@ Config({
 
     ],
      "sell-points": [
-        { "name":"المركز الرئيسي - البرنس نت- مقابل عدن لألمنيوم"},
+        { "name":"المركز الرئيسي - البرنس نت - مقابل عدن لألمنيوم"},
         { "name":"جميع الأماكن التي تتوفر فيها التغطية"},
 
     ]

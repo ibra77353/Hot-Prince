@@ -1,594 +1,329 @@
-#alert-back,
-#block,
-.countdown {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+#alert-back,#block,.countdown{top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 1000}
+@keyframes fadeInRight{0%{opacity: 0;
+transform: translateX(20px)}
+100%{opacity: 1;
+transform: translateX(0)}
 }
-
-@keyframes fadeInRight {
-    0% {
-    opacity: 0;
-    transform: translateX(20px);
-    }
-    100% {
-    opacity: 1;
-    transform: translateX(0);
-    }
+.animated{animation-name: fadeInRight;
+animation-duration: 1s}
+.fadeInRight{animation-name: fadeInRight}
+select{border: 1px solid;
+background-color: rgba(255,255,255,.8);
+height: 30px;
+padding: 3px 20px 3px 40px;
+border-radius: 6px;
+transition: box-shadow .3s ease-in-out}
+.speedMBT::after{content: "Mbps"}
+.speedKBT::after{content: "Kbps"}
+.speedBT::after{content: "B"}
+#alert-back,#block{position: fixed;
+width: 100%;
+height: 100%;
+padding-top: 200px;
+background-color: rgba(0,0,0,.75)}
+.sell-points:hover,input[type=submit]:focus,input[type=submit]:hover{background-color: #585858}
+#mySpeed,#myProfile,#myUpdates,.status-value,#status-0-value,#status-1-value,#status-2-value,#status-3-value,#status-4-value,#status-5-value{background-color: #5A2A85}
+.osamaUpdatsOn{background-color: red !important}
+.osamaUpdatsOff{background-color: #5A2A85 !important}
+#loan{box-sizing: border-box;
+width: 100%;
+max-width: 100%;
+overflow-x: hidden}
+#loan *{box-sizing: border-box}
+#loan .social-login,#loan .social-login .back{position: static !important;
+inset: auto !important;
+top: auto !important;
+left: auto !important;
+right: auto !important;
+transform: none !important}
+#loan .social-login{display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+margin-top: 14px;
+width: 100%}
+#loan .social-login .back{width: 92%;
+max-width: 300px;
+font-size: clamp(11px,3.2vw,14px)}
+.jaib-body{padding: 10px 4%;
+line-height: 1.9;
+font-size: clamp(10px,5vw,11px);
+text-align: right;
+width: 100%;
+word-wrap: break-word}
+.jaib-code-box{width: 60%;
+max-width: 220px;
+margin: 12px auto;
+padding: 4px 0;
+background: #d60000;
+color: #fff;
+border-radius: 12px;
+font-size: clamp(20px,8vw,24px);
+font-weight: bold;
+text-align: center}
+.jaib-contact-label{color: #ff9800;
+font-weight: bold}
+.jaib-contact-number{font-weight: bold}
+.login-input{width: 66% !important}
+tbody tr td{border: 1px solid #876813}
+.hcg-slider{width: 100%;
+text-align: center;
+font-family: Arial,Helvetica,sans-serif;
+display: block;
+z-index: 2}
+#hcg-slider-1 .hcg-slide-container{max-width: 350px;
+padding: 5px;
+box-sizing: border-box;
+display: inline-block;
+position: relative}
+.hcg-slides{display: none;
+text-align: center;
+overflow: hidden}
+.hcg-slide-dot-control{margin-top: 6px;
+text-align: center}
+.hcg-slide-dot{cursor: pointer;
+height: 8px;
+width: 8px;
+margin: 0 3px;
+background-color: #A8CFC0;
+border-radius: 50%;
+display: inline-block}
+.hcg-slide-dot.dot-active{background-color: #D4AF37;
+box-shadow: 0 0 4px rgba(212,175,55,.6)}
+.hcg-slider-body p.title{position: absolute;
+font-size: medium;
+width: 95%;
+right: 0;
+left: 0;
+bottom: 0;
+padding: 2px;
+height: fit-content;
+min-height: 30px;
+max-height: 60px;
+overflow: hidden}
+.container.container-addvert{height: fit-content;
+min-height: auto !important;
+margin-top: 5px}
+.price-div,.sell-point-div{height: auto !important}
+#status .status-div{position: static !important;
+top: auto !important;
+left: auto !important;
+transform: none !important;
+width: 100% !important;
+height: auto !important;
+min-height: 0 !important;
+margin: 10px 0 0 !important;
+padding: 0 !important}
+#status .status-div .wrapper{position: static !important;
+width: 100% !important;
+height: auto !important;
+margin: 0 auto !important}
+#status .status-login-actions{position: static !important;
+float: none !important;
+width: 100%;
+height: auto !important;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 8px;
+margin: 8px auto 0 !important;
+padding: 0 !important;
+box-sizing: border-box}
+#status .status-whatsapp{position: static !important;
+float: none !important;
+width: 100%;
+height: auto !important;
+margin: 7px auto 0 !important;
+padding: 0 !important;
+text-align: center;
+box-sizing: border-box}
+#status .status-whatsapp .contact{margin: 0 !important}
+#status > .app-store{display: none !important}
+@media (max-width: 380px){#login .login-actions{gap: 4px}
+#login .login-actions .button{font-size: 11px}
+#status .status-login-actions,#status .status-extra-actions{gap: 6px}
+#status .status-login-actions button,#status .status-extra-actions .extra-submit{height: 40px !important;
+font-size: 13px}
+#status .status-whatsapp{margin-top: 6px !important}
 }
-
-.animated {
-    animation-name: fadeInRight;
-    animation-duration: 1s;
-}
-
-.fadeInRight {
-    animation-name: fadeInRight;
-}
-
-select {
-    border: 1px solid;
-    background-color: rgba(255, 255, 255, .8);
-    height: 30px;
-    padding: 3px 20px 3px 40px;
-    border-radius: 6px;
-    transition: box-shadow .3s ease-in-out;
-}
-
-.speedMBT::after {
-    content: "Mbps";
-}
-
-.speedKBT::after {
-    content: "Kbps";
-}
-
-.speedBT::after {
-    content: "B";
-}
-
-#alert-back,
-#block {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    padding-top: 200px;
-    background-color: rgba(0, 0, 0, .75);
-}
-
-.sell-points:hover,
-input[type=submit]:focus,
-input[type=submit]:hover {
-    background-color: #585858;
-}
-
-#mySpeed,
-#myProfile,
-#myUpdates,
-.status-value,
-#status-0-value,
-#status-1-value,
-#status-2-value,
-#status-3-value,
-#status-4-value,
-#status-5-value {
-    background-color: #3a5b8d;
-}
-
-.osamaUpdatsOn {
-    background-color: red !important;
-}
-
-.osamaUpdatsOff {
-    background-color: #3a5b8d !important;
-}
-
-#loan {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-#loan * {
-    box-sizing: border-box;
-}
-
-#loan .social-login,
-#loan .social-login .back {
-    position: static !important;
-    inset: auto !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    transform: none !important;
-}
-
-#loan .social-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin-top: 14px;
-    width: 100%;
-}
-
-#loan .social-login .back {
-    width: 92%;
-    max-width: 300px;
-    font-size: clamp(11px, 3.2vw, 14px);
-}
-
-.jaib-body {
-    padding: 10px 4%;
-    line-height: 1.9;
-    font-size: clamp(10px, 5vw, 11px);
-    text-align: right;
-    width: 100%;
-    word-wrap: break-word;
-}
-
-.jaib-code-box {
-    width: 60%;
-    max-width: 220px;
-    margin: 12px auto;
-    padding: 4px 0;
-    background: #d60000;
-    color: #fff;
-    border-radius: 12px;
-    font-size: clamp(20px, 8vw, 24px);
-    font-weight: bold;
-    text-align: center;
-}
-
-.jaib-contact-label {
-    color: #ff9800;
-    font-weight: bold;
-}
-
-.jaib-contact-number {
-    font-weight: bold;
-}
-
-.login-input {
-    width: 66% !important;
-}
-
-tbody tr td {
-    border: 1px solid #876813;
-}
-
-.hcg-slider {
-    width: 100%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    z-index: 2;
-}
-
-#hcg-slider-1 .hcg-slide-container {
-    max-width: 350px;
-    padding: 5px;
-    box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-}
-
-.hcg-slides {
-    display: none;
-    text-align: center;
-    overflow: hidden;
-}
-
-.hcg-slide-dot-control {
-    margin-top: 6px;
-    text-align: center;
-}
-
-.hcg-slide-dot {
-    cursor: pointer;
-    height: 8px;
-    width: 8px;
-    margin: 0 3px;
-    background-color: #A8CFC0;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.hcg-slide-dot.dot-active {
-    background-color: #D4AF37;
-    box-shadow: 0 0 4px rgba(212, 175, 55, .6);
-}
-
-.hcg-slider-body p.title {
-    position: absolute;
-    font-size: medium;
-    width: 95%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding: 2px;
-    height: fit-content;
-    min-height: 30px;
-    max-height: 60px;
-    overflow: hidden;
-}
-
-.container.container-addvert {
-    height: fit-content;
-    min-height: auto !important;
-    margin-top: 5px;
-}
-
-.price-div,
-.sell-point-div {
-    height: auto !important;
-}
-
-#status .status-div {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    transform: none !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    margin: 10px 0 0 !important;
-    padding: 0 !important;
-}
-
-#status .status-div .wrapper {
-    position: static !important;
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 auto !important;
-}
-
-#status .status-login-actions {
-    position: static !important;
-    float: none !important;
-    width: 100%;
-    height: auto !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin: 8px auto 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-}
-
-#status .status-whatsapp {
-    position: static !important;
-    float: none !important;
-    width: 100%;
-    height: auto !important;
-    margin: 7px auto 0 !important;
-    padding: 0 !important;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-#status .status-whatsapp .contact {
-    margin: 0 !important;
-}
-
-#status > .app-store {
-    display: none !important;
-}
-
-@media (max-width: 380px) {
-    #login .login-actions {
-    gap: 4px;
-    }
-    #login .login-actions .button {
-    font-size: 11px;
-    }
-    #status .status-login-actions,
-    #status .status-extra-actions {
-    gap: 6px;
-    }
-    #status .status-login-actions button,
-    #status .status-extra-actions .extra-submit {
-    height: 40px !important;
-    font-size: 13px;
-    }
-    #status .status-whatsapp {
-    margin-top: 6px !important;
-    }
-}
-
-#hcg-slider-1 .hcg-slides img,
-#hcg-slider-1 .hcg-slides video {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid rgba(34, 211, 238, .45) !important;
-    border-radius: 10px !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .20) !important;
-}
-
-#login .login-actions {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#login .login-actions .button {
-    position: static !important;
-    float: none !important;
-    width: auto !important;
-    margin: 0 !important;
-    flex: 0 1 auto;
-}
-
-#login #hcg-slider-1 {
-    clear: both;
-    margin-top: 5px;
-}
-
-.login-field {
-    padding: 14px 0 !important;
-}
-
-#status .status-extra-actions {
-    position: static !important;
-    float: none !important;
-    width: 100%;
-    height: auto !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin: 8px auto 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-}
-
-#status .status-extra-actions .extra-submit {
-    position: static !important;
-    float: none !important;
-    width: auto !important;
-    min-width: 0;
-    height: 40px !important;
-    margin: 0 !important;
-    flex: 0 0 auto !important;
-    max-width: max-content !important;
-    box-sizing: border-box;
-}
-
-#status .status-login-actions button {
-    flex: 0 0 auto !important;
-    width: auto !important;
-    max-width: max-content !important;
-}
-
-#loan .jaib-back-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 12px;
-}
-
-#loan .jaib-back-wrapper .back {
-    width: 92%;
-    max-width: 300px;
-}
-
+#hcg-slider-1 .hcg-slides img,#hcg-slider-1 .hcg-slides video{width: auto;
+max-width: 100%;
+height: auto;
+object-fit: cover;
+display: block;
+margin: 0 auto;
+border: 1px solid rgba(123,58,200,.45) !important;
+border-radius: 10px !important;
+box-shadow: 0 2px 6px rgba(0,0,0,.20) !important}
+#login .login-actions{width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 6px;
+margin: 0 auto;
+padding: 0;
+box-sizing: border-box}
+#login .login-actions .button{position: static !important;
+float: none !important;
+width: auto !important;
+margin: 0 !important;
+flex: 0 1 auto}
+#login #hcg-slider-1{clear: both;
+margin-top: 5px}
+.login-field{padding: 14px 0 !important}
+#status .status-extra-actions{position: static !important;
+float: none !important;
+width: 100%;
+height: auto !important;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 8px;
+margin: 8px auto 0 !important;
+padding: 0 !important;
+box-sizing: border-box}
+#status .status-extra-actions .extra-submit{position: static !important;
+float: none !important;
+width: auto !important;
+min-width: 0;
+height: 40px !important;
+margin: 0 !important;
+flex: 0 0 auto !important;
+max-width: max-content !important;
+box-sizing: border-box}
+#status .status-login-actions button{flex: 0 0 auto !important;
+width: auto !important;
+max-width: max-content !important}
+#loan .jaib-back-wrapper{display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin-top: 12px}
+#loan .jaib-back-wrapper .back{width: 92%;
+max-width: 300px}
 /* =========================================================
-   إعلان البرنس نت العائم — قواعد موحدة بدون تكرار
-   ========================================================= */
-
+إعلان البرنس نت العائم — قواعد موحدة بدون تكرار
+========================================================= */
 /* =========================================================
-   إعلان البرنس نت العائم
-   ========================================================= */
-
-#login {
-    position: relative;
-}
-
-#login .prince-ad-overlay {
-    position: absolute;
-    top: 15px;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity .35s ease, visibility .35s ease;
-    pointer-events: none;
-}
-
-#login .prince-ad-card {
-    box-sizing: border-box;
-    width: auto;
-    min-height: 142px;
-    margin: 0 auto;
-    padding: 5px 5px 2px;
-    overflow: hidden;
-    text-align: center;
-    direction: rtl;
-    color: #fff;
-    border: 1px solid rgba(243, 215, 120, .95);
-    border-radius: 16px;
-    background:
-        radial-gradient(circle at 85% 0%, rgba(212, 175, 55, .16), transparent 42%),
-        linear-gradient(135deg, rgba(8, 16, 31, .99), rgba(20, 43, 76, .99) 58%, rgba(10, 24, 45, .99));
-}
-
-#login .prince-ad-heading {
-    margin: 0 0 5px;
-    color: #F3D778;
-    font-size: clamp(18px, 3vw, 20px);
-    font-weight: 900;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-}
-
-#login .prince-ad-subtitle {
-    margin-bottom: 9px;
-    color: #fff;
-    font-weight: 800;
-}
-
-#login .prince-ad-features {
-    font-size: clamp(10px, 2.8vw, 13px);
-    font-weight: 700;
-    line-height: 1.8;
-}
-
-#login .prince-ad-features span {
-    color: #F3D778;
-}
-
-#login .prince-ad-close {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    z-index: 2;
-    width: 27px;
-    height: 27px;
-    padding: 0;
-    border: 1px solid rgba(255, 255, 255, .92);
-    border-radius: 50%;
-    background: #B4232D;
-    color: #fff;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 900;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .28);
-    cursor: pointer;
-    pointer-events: auto;
-}
-
-#login .prince-ad-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
+إعلان البرنس نت العائم
+========================================================= */
+#login{position: relative}
+#login .prince-ad-overlay{position: absolute;
+top: 15px;
+left: 0;
+right: 0;
+z-index: 9999;
+box-sizing: border-box;
+width: 100%;
+margin: 0;
+opacity: 1;
+visibility: visible;
+transition: opacity .35s ease,visibility .35s ease;
+pointer-events: none}
+#login .prince-ad-card{box-sizing: border-box;
+width: auto;
+min-height: 142px;
+margin: 0 auto;
+padding: 5px 5px 2px;
+overflow: hidden;
+text-align: center;
+direction: rtl;
+color: #fff;
+border: 1px solid rgba(243,215,120,.95);
+border-radius: 16px;
+background:
+radial-gradient(circle at 85% 0%,rgba(212,175,55,.16),transparent 42%),linear-gradient(135deg,rgba(8,16,31,.99),rgba(42,22,72,.99) 58%,rgba(10,24,45,.99))}
+#login .prince-ad-heading{margin: 0 0 5px;
+color: #F3D778;
+font-size: clamp(18px,3vw,20px);
+font-weight: 900;
+text-shadow: 0 2px 5px rgba(0,0,0,.5)}
+#login .prince-ad-subtitle{margin-bottom: 9px;
+color: #fff;
+font-weight: 800}
+#login .prince-ad-features{font-size: clamp(10px,2.8vw,13px);
+font-weight: 700;
+line-height: 1.8}
+#login .prince-ad-features span{color: #F3D778}
+#login .prince-ad-close{position: absolute;
+top: 8px;
+right: 12px;
+z-index: 2;
+width: 27px;
+height: 27px;
+padding: 0;
+border: 1px solid rgba(255,255,255,.92);
+border-radius: 50%;
+background: #B4232D;
+color: #fff;
+font-size: 24px;
+line-height: 24px;
+font-weight: 900;
+box-shadow: 0 2px 8px rgba(0,0,0,.28);
+cursor: pointer;
+pointer-events: auto}
+#login .prince-ad-hidden{opacity: 0;
+visibility: hidden;
+pointer-events: none}
 /* بطاقتا الخدمات */
-#login .prince-ad-services {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 5px;
-    align-items: stretch;
-    margin-top: 10px;
-}
-
-#login .prince-ad-service {
-    box-sizing: border-box;
-    min-width: 0;
-    padding: 5px 3px;
-    border: 1px solid rgba(212, 175, 55, .8);
-    border-radius: 7px;
-    background: rgba(212, 175, 55, .10);
-}
-
-#login .prince-ad-live {
-    border-color: #19b7ed;
-    background: rgba(18, 104, 153, .27);
-}
-
-#login .prince-ad-service .prince-ad-wallet-title {
-    margin: 0 0 5px;
-    color: #F3D778;
-    font-size: 15px;
-    line-height: 1.45;
-    font-weight: 800;
-}
-
-#login .prince-ad-live .prince-ad-wallet-title {
-    color: #d8f1ff;
-}
-
-#login .prince-ad-service .prince-ad-wallet-text {
-    margin: 0;
-    color: #fff;
-    font-size: 11px;
-    line-height: 1.55;
-}
-
-#login .prince-ad-service .prince-ad-wallet-note {
-    margin-top: 4px;
-    color: #F3D778;
-    font-size: 13px;
-    line-height: 1.45;
-}
-
-#login .prince-ad-live .prince-ad-wallet-note {
-    color: #c7e7ff;
-}
-
+#login .prince-ad-services{display: grid;
+grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+gap: 5px;
+align-items: stretch;
+margin-top: 10px}
+#login .prince-ad-service{box-sizing: border-box;
+min-width: 0;
+padding: 5px 3px;
+border: 1px solid rgba(212,175,55,.8);
+border-radius: 7px;
+background: rgba(212,175,55,.10)}
+#login .prince-ad-live{border-color: #7B3AC8;
+background: rgba(74,26,110,.27)}
+#login .prince-ad-service .prince-ad-wallet-title{margin: 0 0 5px;
+color: #F3D778;
+font-size: 15px;
+line-height: 1.45;
+font-weight: 800}
+#login .prince-ad-live .prince-ad-wallet-title{color: #E5DCEF}
+#login .prince-ad-service .prince-ad-wallet-text{margin: 0;
+color: #fff;
+font-size: 11px;
+line-height: 1.55}
+#login .prince-ad-service .prince-ad-wallet-note{margin-top: 4px;
+color: #F3D778;
+font-size: 13px;
+line-height: 1.45}
+#login .prince-ad-live .prince-ad-wallet-note{color: #D8CCEF}
 /* تذييل الإعلان */
-#login .prince-ad-footer {
-    margin-top: 3px;
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    color: #FFE69A;
-    font-size: 11px;
-    line-height: 1.5;
-    font-weight: 700;
-}
-
+#login .prince-ad-footer{margin-top: 3px;
+padding: 0;
+border: 0;
+border-radius: 0;
+background: transparent;
+color: #FFE69A;
+font-size: 11px;
+line-height: 1.5;
+font-weight: 700}
 /* الشاشات الصغيرة */
-@media (max-width: 380px) {
-    #login .prince-ad-overlay {
-        padding: 5px 7px 0;
-    }
-
-    #login .prince-ad-card {
-        min-height: 132px;
-        padding: 13px 9px 10px;
-    }
-
-    #login .prince-ad-features {
-        font-size: 10px;
-    }
-
-    #login .prince-ad-services {
-        gap: 5px;
-    }
-
-    #login .prince-ad-service {
-        padding: 7px 4px;
-    }
-
-    #login .prince-ad-service .prince-ad-wallet-title {
-        font-size: 11px;
-    }
-
-    #login .prince-ad-service .prince-ad-wallet-text {
-        font-size: 9px;
-    }
-
-    #login .prince-ad-service .prince-ad-wallet-note {
-        font-size: 8px;
-    }
+@media (max-width: 380px){#login .prince-ad-overlay{padding: 5px 7px 0}
+#login .prince-ad-card{min-height: 132px;
+padding: 13px 9px 10px}
+#login .prince-ad-features{font-size: 10px}
+#login .prince-ad-services{gap: 5px}
+#login .prince-ad-service{padding: 7px 4px}
+#login .prince-ad-service .prince-ad-wallet-title{font-size: 11px}
+#login .prince-ad-service .prince-ad-wallet-text{font-size: 9px}
+#login .prince-ad-service .prince-ad-wallet-note{font-size: 8px}
 }
-
-
-@media (max-width: 380px) {
-    #login .prince-ad-services { gap: 5px; }
-    #login .prince-ad-service { padding: 7px 4px; }
-    #login .prince-ad-service .prince-ad-wallet-title { font-size: 11px; }
-    #login .prince-ad-service .prince-ad-wallet-text { font-size: 9px; }
-    #login .prince-ad-service .prince-ad-wallet-note { font-size: 8px; }
+@media (max-width: 380px){#login .prince-ad-services{gap: 5px}
+#login .prince-ad-service{padding: 7px 4px}
+#login .prince-ad-service .prince-ad-wallet-title{font-size: 11px}
+#login .prince-ad-service .prince-ad-wallet-text{font-size: 9px}
+#login .prince-ad-service .prince-ad-wallet-note{font-size: 8px}
 }
