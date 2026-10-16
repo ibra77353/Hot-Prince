@@ -421,6 +421,31 @@ div.wrapper::-webkit-scrollbar-thumb {
     background-color: rgba(43,13,18,.34) !important;
 }
 
+/* ===== قسم الأسعار — رفع للأعلى ===== */
+#price {
+    margin-top: -20px !important;
+}
+
+/* ===== أزرار العودة والتواصل (social-login) ===== */
+.social-login {
+    gap: 8px !important;
+}
+.social-login .back,
+.social-login .app-logout.back {
+    background: linear-gradient(115deg, var(--carnelian-bg), var(--carnelian-bg-light)) !important;
+    color: var(--carnelian-pale-gold) !important;
+    border: 1px solid rgba(226,184,104,.5) !important;
+    border-radius: 100px !important;
+    font-family: var(--carnelian-font) !important;
+    box-shadow: inset 0 1px 0 rgba(255,248,238,.08), 0 2px 8px rgba(43,13,18,.2) !important;
+    transition: all .3s ease !important;
+}
+.social-login .back:hover,
+.social-login .app-logout.back:hover {
+    background: linear-gradient(115deg, var(--carnelian-bg-light), var(--carnelian-bg)) !important;
+    box-shadow: inset 0 1px 0 rgba(255,248,238,.1), 0 3px 10px rgba(226,184,104,.2) !important;
+}
+
 /* ===== روابط الواتساب ===== */
 #status .status-whatsapp .contact a {
     color: #25D366 !important;
