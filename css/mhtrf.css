@@ -26,9 +26,9 @@ height: 100%;
 padding-top: 200px;
 background-color: rgba(0,0,0,.75)}
 .sell-points:hover,input[type=submit]:focus,input[type=submit]:hover{background-color: #585858}
-#mySpeed,#myProfile,#myUpdates,.status-value,#status-0-value,#status-1-value,#status-2-value,#status-3-value,#status-4-value,#status-5-value{background-color: #5A2A85}
+#mySpeed,#myProfile,#myUpdates,.status-value,#status-0-value,#status-1-value,#status-2-value,#status-3-value,#status-4-value,#status-5-value{background-color: #5A5A5A}
 .osamaUpdatsOn{background-color: red !important}
-.osamaUpdatsOff{background-color: #5A2A85 !important}
+.osamaUpdatsOff{background-color: #5A5A5A !important}
 #loan{box-sizing: border-box;
 width: 100%;
 max-width: 100%;
@@ -157,7 +157,7 @@ height: auto;
 object-fit: cover;
 display: block;
 margin: 0 auto;
-border: 1px solid rgba(123,58,200,.45) !important;
+border: 1px solid rgba(120,120,120,.45) !important;
 border-radius: 10px !important;
 box-shadow: 0 2px 6px rgba(0,0,0,.20) !important}
 #login .login-actions{width: 100%;
@@ -238,7 +238,7 @@ color: #fff;
 border: 1px solid rgba(243,215,120,.95);
 border-radius: 16px;
 background:
-radial-gradient(circle at 85% 0%,rgba(212,175,55,.16),transparent 42%),linear-gradient(135deg,rgba(8,16,31,.99),rgba(42,22,72,.99) 58%,rgba(10,24,45,.99))}
+radial-gradient(circle at 85% 0%,rgba(212,175,55,.16),transparent 42%),linear-gradient(135deg,rgba(8,16,31,.99),rgba(45,45,45,.99) 58%,rgba(10,24,45,.99))}
 #login .prince-ad-heading{margin: 0 0 5px;
 color: #F3D778;
 font-size: clamp(18px,3vw,20px);
@@ -283,14 +283,14 @@ padding: 5px 3px;
 border: 1px solid rgba(212,175,55,.8);
 border-radius: 7px;
 background: rgba(212,175,55,.10)}
-#login .prince-ad-live{border-color: #7B3AC8;
-background: rgba(74,26,110,.27)}
+#login .prince-ad-live{border-color: #7B7B7B;
+background: rgba(60,60,60,.27)}
 #login .prince-ad-service .prince-ad-wallet-title{margin: 0 0 5px;
 color: #F3D778;
 font-size: 15px;
 line-height: 1.45;
 font-weight: 800}
-#login .prince-ad-live .prince-ad-wallet-title{color: #E5DCEF}
+#login .prince-ad-live .prince-ad-wallet-title{color: #E0E0E0}
 #login .prince-ad-service .prince-ad-wallet-text{margin: 0;
 color: #fff;
 font-size: 11px;
@@ -299,7 +299,7 @@ line-height: 1.55}
 color: #F3D778;
 font-size: 13px;
 line-height: 1.45}
-#login .prince-ad-live .prince-ad-wallet-note{color: #D8CCEF}
+#login .prince-ad-live .prince-ad-wallet-note{color: #CCCCCC}
 /* تذييل الإعلان */
 #login .prince-ad-footer{margin-top: 3px;
 padding: 0;
