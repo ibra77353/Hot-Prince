@@ -334,65 +334,85 @@ table td:first-child {
     color: var(--carnelian-ivory) !important;
 }
 
-/* ===== إعلان البرنس نت العائم ===== */
+/* ===== إعلان البرنس نت العائم — الصولجان الإمبراطوري المتوج ===== */
 #login .prince-ad-card {
-    background:
-        radial-gradient(circle at 85% 0%, rgba(226,184,104,.18), transparent 42%),
-        linear-gradient(135deg, rgba(43,13,18,.99), rgba(61,20,25,.99) 58%, rgba(26,10,14,.99)) !important;
-    border: 1.5px solid var(--carnelian-border) !important;
+    background: radial-gradient(ellipse at 50% -25%, #6A351C 0%, #43151A 38%, #2C090F 76%) !important;
+    border: 1px solid #D9A84E !important;
     border-radius: 16px !important;
-    box-shadow: inset 0 1px 0 rgba(255,248,238,.10), 0 4px 14px rgba(43,13,18,.24) !important;
+    box-shadow: inset 0 0 0 3px #2C090F, inset 0 0 0 4px #8C632B, 0 4px 14px rgba(44,9,15,.22) !important;
     font-family: var(--carnelian-font) !important;
+}
+#login .prince-ad-crest {
+    height: 13px;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F3C973;
+}
+#login .prince-ad-crest svg {
+    width: 25px;
+    height: 13px;
+    overflow: visible;
+    animation: crestFloat 3.4s ease-in-out infinite;
 }
 #login .prince-ad-heading {
-    color: var(--carnelian-pale-gold) !important;
+    color: #F3C973 !important;
     font-family: var(--carnelian-font) !important;
-    font-size: clamp(18px, 4vw, 22px) !important;
-    font-weight: 900 !important;
-    text-shadow: 0 1px 3px rgba(43,13,18,.6) !important;
+    font-size: 21px !important;
+    line-height: 1.08 !important;
+    font-weight: 700 !important;
+    letter-spacing: .15px !important;
+    margin: 1px 0 0 !important;
 }
 #login .prince-ad-subtitle {
-    color: var(--carnelian-ivory) !important;
+    color: #EDE1D1 !important;
     font-family: var(--carnelian-font) !important;
-    font-size: 13px !important;
-    font-weight: 700 !important;
+    font-size: 12px !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+    margin: 2px 0 0 !important;
 }
 #login .prince-ad-close {
-    background: linear-gradient(135deg, var(--carnelian-bg), var(--carnelian-bg-light)) !important;
-    border: 1px solid var(--carnelian-border) !important;
-    color: var(--carnelian-pale-gold) !important;
-    box-shadow: 0 2px 6px rgba(43,13,18,.3) !important;
-    transition: all .3s ease !important;
+    background: linear-gradient(145deg, #50201A, #26070C) !important;
+    border: 1px solid #D9A84E !important;
+    color: #F3C973 !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,.28) !important;
+    font-family: var(--carnelian-font) !important;
+    transition: color .18s ease, background-color .18s ease, box-shadow .18s ease, transform .18s ease !important;
 }
 #login .prince-ad-close:hover {
-    background: linear-gradient(135deg, var(--carnelian-bg-light), var(--carnelian-bg)) !important;
-    box-shadow: 0 0 8px rgba(226,184,104,.4) !important;
+    color: #fff0bc !important;
+    background: #67311c !important;
+    box-shadow: 0 0 8px rgba(243,201,115,.4) !important;
+}
+#login .prince-ad-close:active {
+    transform: scale(.94) !important;
+}
+#login .prince-ad-close:focus-visible {
+    outline: 2px solid #F3C973 !important;
+    outline-offset: 2px !important;
 }
 #login .prince-ad-service {
-    border: 1px solid rgba(226,184,104,.4) !important;
-    background: rgba(43,13,18,.6) !important;
-    border-radius: 10px !important;
-    box-shadow: inset 0 1px 0 rgba(255,248,238,.06) !important;
-    transition: all .3s ease !important;
-}
-#login .prince-ad-service:hover {
-    border-color: rgba(226,184,104,.6) !important;
-    background: rgba(61,20,25,.7) !important;
+    border: 1px solid #D9A84E !important;
+    background: linear-gradient(145deg, #26070C, #1C0509 72%) !important;
+    border-radius: 9px !important;
+    box-shadow: inset 0 1px 0 rgba(255,231,176,.12), 0 2px 5px rgba(0,0,0,.2) !important;
 }
 #login .prince-ad-wallet-title {
-    color: var(--carnelian-pale-gold) !important;
+    color: #F3C973 !important;
     font-family: var(--carnelian-font) !important;
 }
 #login .prince-ad-wallet-text {
-    color: var(--carnelian-ivory) !important;
+    color: #EDE1D1 !important;
 }
 #login .prince-ad-wallet-note {
-    color: rgba(255,248,238,.7) !important;
+    color: #EDE1D1 !important;
 }
 #login .prince-ad-footer {
-    color: var(--carnelian-pale-gold) !important;
+    color: #F3C973 !important;
     font-family: var(--carnelian-font) !important;
-    border-top: 1px solid rgba(226,184,104,.2) !important;
+    border-top: 1px solid #8C632B !important;
     padding-top: 4px !important;
 }
 
@@ -477,4 +497,8 @@ div.wrapper::-webkit-scrollbar-thumb {
 #status .status-whatsapp .contact a:hover,
 #status .status-whatsapp .contact a:focus {
     color: #128C7E !important;
+}
+@keyframes crestFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-1px); }
 }

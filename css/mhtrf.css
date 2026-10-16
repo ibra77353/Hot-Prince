@@ -228,24 +228,23 @@ transition: opacity .35s ease,visibility .35s ease;
 pointer-events: none}
 #login .prince-ad-card{box-sizing: border-box;
 width: auto;
-min-height: 142px;
 margin: 0 auto;
-padding: 5px 5px 2px;
+padding: 7px 11px 6px;
 overflow: hidden;
 text-align: center;
 direction: rtl;
-color: #fff}
+color: #EDE1D1}
 #login .prince-ad-close{position: absolute;
-top: 8px;
-right: 12px;
+top: 7px;
+right: 9px;
 z-index: 2;
-width: 27px;
-height: 27px;
+width: 24px;
+height: 24px;
 padding: 0;
 border-radius: 50%;
-font-size: 24px;
-line-height: 24px;
-font-weight: 900;
+font-size: 19px;
+line-height: 20px;
+font-weight: 700;
 cursor: pointer;
 pointer-events: auto}
 #login .prince-ad-hidden{opacity: 0;
@@ -254,38 +253,35 @@ pointer-events: none}
 /* بطاقتا الخدمات */
 #login .prince-ad-services{display: grid;
 grid-template-columns: minmax(0,1fr) minmax(0,1fr);
-gap: 5px;
+gap: 6px;
 align-items: stretch;
-margin-top: 10px}
+margin-top: 6px}
 #login .prince-ad-service{box-sizing: border-box;
 min-width: 0;
-padding: 5px 3px}
-#login .prince-ad-service .prince-ad-wallet-title{margin: 0 0 5px;
-font-size: 16px;
-line-height: 1.45;
-font-weight: 800}
-#login .prince-ad-service .prince-ad-wallet-text{margin: 0;
-font-size: 13px;
-line-height: 1.55}
-#login .prince-ad-service .prince-ad-wallet-note{margin-top: 4px;
+padding: 5px 6px}
+#login .prince-ad-service .prince-ad-wallet-title{margin: 0 0 2px;
 font-size: 14px;
-line-height: 1.45}
+line-height: 1.25;
+font-weight: 700}
+#login .prince-ad-service .prince-ad-wallet-text{margin: 0;
+font-size: 11.5px;
+line-height: 1.35;
+font-weight: 400}
+#login .prince-ad-service .prince-ad-wallet-note{margin: 2px 0 0;
+font-size: 11px;
+line-height: 1.3;
+font-weight: 600}
 /* تذييل الإعلان */
-#login .prince-ad-footer{margin-top: 3px;
-padding: 0;
-border: 0;
+#login .prince-ad-footer{margin-top: 4px;
+padding-top: 3px;
+border-top: 1px solid #8C632B;
 border-radius: 0;
 background: transparent;
-font-size: 13px;
-line-height: 1.5;
+font-size: 11.5px;
+line-height: 1.3;
 font-weight: 700}
 /* الشاشات الصغيرة */
 @media (max-width: 380px){#login .prince-ad-overlay{padding: 5px 7px 0}
-#login .prince-ad-card{min-height: 132px;
-padding: 13px 9px 10px}
+#login .prince-ad-card{padding: 7px 9px 6px}
 #login .prince-ad-services{gap: 5px}
-#login .prince-ad-service{padding: 7px 4px}
-#login .prince-ad-service .prince-ad-wallet-title{font-size: 14px}
-#login .prince-ad-service .prince-ad-wallet-text{font-size: 12px}
-#login .prince-ad-service .prince-ad-wallet-note{font-size: 12px}
 }
