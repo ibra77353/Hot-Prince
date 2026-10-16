@@ -337,30 +337,47 @@ table td:first-child {
 /* ===== إعلان البرنس نت العائم ===== */
 #login .prince-ad-card {
     background:
-        radial-gradient(circle at 85% 0%, rgba(226,184,104,.16), transparent 42%),
+        radial-gradient(circle at 85% 0%, rgba(226,184,104,.18), transparent 42%),
         linear-gradient(135deg, rgba(43,13,18,.99), rgba(61,20,25,.99) 58%, rgba(26,10,14,.99)) !important;
-    border: 1px solid var(--carnelian-border) !important;
+    border: 1.5px solid var(--carnelian-border) !important;
     border-radius: 16px !important;
-    box-shadow: var(--carnelian-shadow) !important;
+    box-shadow: inset 0 1px 0 rgba(255,248,238,.10), 0 4px 14px rgba(43,13,18,.24) !important;
+    font-family: var(--carnelian-font) !important;
 }
 #login .prince-ad-heading {
     color: var(--carnelian-pale-gold) !important;
     font-family: var(--carnelian-font) !important;
+    text-shadow: 0 1px 3px rgba(43,13,18,.6) !important;
 }
 #login .prince-ad-subtitle {
     color: var(--carnelian-ivory) !important;
+    font-family: var(--carnelian-font) !important;
 }
 #login .prince-ad-close {
-    background: #B4232D !important;
+    background: linear-gradient(135deg, var(--carnelian-bg), var(--carnelian-bg-light)) !important;
     border: 1px solid var(--carnelian-border) !important;
+    color: var(--carnelian-pale-gold) !important;
+    box-shadow: 0 2px 6px rgba(43,13,18,.3) !important;
+    transition: all .3s ease !important;
+}
+#login .prince-ad-close:hover {
+    background: linear-gradient(135deg, var(--carnelian-bg-light), var(--carnelian-bg)) !important;
+    box-shadow: 0 0 8px rgba(226,184,104,.4) !important;
 }
 #login .prince-ad-service {
     border: 1px solid rgba(226,184,104,.4) !important;
     background: rgba(43,13,18,.6) !important;
     border-radius: 10px !important;
+    box-shadow: inset 0 1px 0 rgba(255,248,238,.06) !important;
+    transition: all .3s ease !important;
+}
+#login .prince-ad-service:hover {
+    border-color: rgba(226,184,104,.6) !important;
+    background: rgba(61,20,25,.7) !important;
 }
 #login .prince-ad-wallet-title {
     color: var(--carnelian-pale-gold) !important;
+    font-family: var(--carnelian-font) !important;
 }
 #login .prince-ad-wallet-text {
     color: var(--carnelian-ivory) !important;
@@ -370,6 +387,9 @@ table td:first-child {
 }
 #login .prince-ad-footer {
     color: var(--carnelian-pale-gold) !important;
+    font-family: var(--carnelian-font) !important;
+    border-top: 1px solid rgba(226,184,104,.2) !important;
+    padding-top: 4px !important;
 }
 
 /* ===== السلايدر ===== */
