@@ -261,14 +261,14 @@ margin-top: 10px}
 min-width: 0;
 padding: 5px 3px}
 #login .prince-ad-service .prince-ad-wallet-title{margin: 0 0 5px;
-font-size: 15px;
+font-size: 16px;
 line-height: 1.45;
 font-weight: 800}
 #login .prince-ad-service .prince-ad-wallet-text{margin: 0;
-font-size: 11px;
+font-size: 13px;
 line-height: 1.55}
 #login .prince-ad-service .prince-ad-wallet-note{margin-top: 4px;
-font-size: 13px;
+font-size: 14px;
 line-height: 1.45}
 /* تذييل الإعلان */
 #login .prince-ad-footer{margin-top: 3px;
@@ -276,7 +276,7 @@ padding: 0;
 border: 0;
 border-radius: 0;
 background: transparent;
-font-size: 11px;
+font-size: 13px;
 line-height: 1.5;
 font-weight: 700}
 /* الشاشات الصغيرة */
@@ -285,7 +285,7 @@ font-weight: 700}
 padding: 13px 9px 10px}
 #login .prince-ad-services{gap: 5px}
 #login .prince-ad-service{padding: 7px 4px}
-#login .prince-ad-service .prince-ad-wallet-title{font-size: 11px}
-#login .prince-ad-service .prince-ad-wallet-text{font-size: 9px}
-#login .prince-ad-service .prince-ad-wallet-note{font-size: 8px}
+#login .prince-ad-service .prince-ad-wallet-title{font-size: 14px}
+#login .prince-ad-service .prince-ad-wallet-text{font-size: 12px}
+#login .prince-ad-service .prince-ad-wallet-note{font-size: 12px}
 }

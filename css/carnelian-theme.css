@@ -347,11 +347,15 @@ table td:first-child {
 #login .prince-ad-heading {
     color: var(--carnelian-pale-gold) !important;
     font-family: var(--carnelian-font) !important;
+    font-size: clamp(18px, 4vw, 22px) !important;
+    font-weight: 900 !important;
     text-shadow: 0 1px 3px rgba(43,13,18,.6) !important;
 }
 #login .prince-ad-subtitle {
     color: var(--carnelian-ivory) !important;
     font-family: var(--carnelian-font) !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
 }
 #login .prince-ad-close {
     background: linear-gradient(135deg, var(--carnelian-bg), var(--carnelian-bg-light)) !important;
