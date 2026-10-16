@@ -1,0 +1,434 @@
+/* =========================================================
+   Neon Tech Theme — Enhancement Layer
+   Consistent glow, animations & SweetAlert2 overrides
+   ========================================================= */
+
+/* ===== Animated Screen Border Glow ===== */
+
+@keyframes neonBorderPulse {
+    0%, 100% {
+        box-shadow: 0 0 18px rgba(0, 212, 255, .45),
+                    0 0 40px rgba(0, 212, 255, .15),
+                    inset 0 0 20px rgba(0, 212, 255, .05);
+    }
+    50% {
+        box-shadow: 0 0 28px rgba(0, 212, 255, .7),
+                    0 0 60px rgba(0, 212, 255, .25),
+                    inset 0 0 30px rgba(0, 212, 255, .08);
+    }
+}
+
+.screen {
+    animation: neonBorderPulse 4s ease-in-out infinite !important;
+}
+
+/* ===== Enhanced Network Name Glow ===== */
+
+@keyframes neonTextGlow {
+    0%, 100% {
+        text-shadow: 0 0 14px var(--neon-cyan),
+                     0 0 30px rgba(0, 212, 255, .6),
+                     0 0 50px rgba(0, 212, 255, .3);
+    }
+    50% {
+        text-shadow: 0 0 18px var(--neon-cyan),
+                     0 0 40px rgba(0, 212, 255, .8),
+                     0 0 70px rgba(0, 212, 255, .4);
+    }
+}
+
+.network-name {
+    animation: neonTextGlow 3s ease-in-out infinite !important;
+}
+
+/* ===== Enhanced Button Glow ===== */
+
+@keyframes neonButtonGlow {
+    0%, 100% {
+        box-shadow: 0 0 12px rgba(0, 212, 255, .4),
+                    0 0 20px rgba(0, 212, 255, .15);
+    }
+    50% {
+        box-shadow: 0 0 18px rgba(0, 212, 255, .6),
+                    0 0 30px rgba(0, 212, 255, .2);
+    }
+}
+
+.login-submit {
+    animation: neonButtonGlow 2.6s ease-in-out infinite,
+               pulse 2.6s ease-in-out infinite !important;
+}
+
+/* Gold buttons enhanced glow */
+@keyframes neonGoldGlow {
+    0%, 100% {
+        box-shadow: 0 0 12px rgba(242, 201, 76, .4),
+                    0 0 20px rgba(242, 201, 76, .15);
+    }
+    50% {
+        box-shadow: 0 0 18px rgba(242, 201, 76, .6),
+                    0 0 30px rgba(242, 201, 76, .2);
+    }
+}
+
+.price-icon,
+.sell-point-icon,
+.app-store {
+    animation: neonGoldGlow 3s ease-in-out infinite !important;
+}
+
+/* ===== Enhanced Card/Wrapper Glow ===== */
+
+@keyframes neonCardGlow {
+    0%, 100% {
+        box-shadow: 0 0 14px rgba(0, 212, 255, .25),
+                    0 0 30px rgba(0, 212, 255, .08);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 212, 255, .4),
+                    0 0 40px rgba(0, 212, 255, .12);
+    }
+}
+
+div.wrapper {
+    animation: neonCardGlow 5s ease-in-out infinite !important;
+}
+
+/* ===== Enhanced Table Row Hover ===== */
+
+tbody tr {
+    transition: background-color .25s ease, box-shadow .25s ease !important;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 212, 255, .15) !important;
+    box-shadow: inset 0 0 15px rgba(0, 212, 255, .15) !important;
+}
+
+/* ===== Enhanced Input Focus Glow ===== */
+
+.login-input:focus,
+.select:focus {
+    box-shadow: 0 0 10px rgba(242, 201, 76, .6),
+                0 0 20px rgba(242, 201, 76, .3),
+                inset 0 0 8px rgba(242, 201, 76, .15) !important;
+}
+
+/* ===== Enhanced Title Glow ===== */
+
+.app .title,
+.title {
+    text-shadow: 0 0 10px rgba(0, 212, 255, .7),
+                 0 0 20px rgba(0, 212, 255, .4) !important;
+}
+
+/* ===== Mawlid Banner Enhanced ===== */
+
+.mawlid-banner {
+    animation: neonGoldGlow 4s ease-in-out infinite !important;
+}
+
+/* ===== Date Field Enhanced ===== */
+
+.date-field {
+    text-shadow: 0 0 6px rgba(191, 234, 255, .5) !important;
+}
+
+/* ===== Match Info Enhanced ===== */
+
+.match-info {
+    animation: neonGoldGlow 4s ease-in-out infinite !important;
+}
+
+.match-info span {
+    text-shadow: 0 0 10px rgba(242, 201, 76, .6),
+                0 0 20px rgba(242, 201, 76, .3) !important;
+}
+
+/* ===== Jaib Code Box Enhanced ===== */
+
+@keyframes neonCodePulse {
+    0%, 100% {
+        box-shadow: 0 0 14px rgba(242, 201, 76, .3),
+                    0 0 25px rgba(242, 201, 76, .1);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(242, 201, 76, .5),
+                    0 0 35px rgba(242, 201, 76, .15);
+    }
+}
+
+.jaib-code-box {
+    animation: neonCodePulse 3s ease-in-out infinite !important;
+}
+
+/* ===== Prince Ad Card Enhanced ===== */
+
+#login .prince-ad-card {
+    animation: neonCardGlow 5s ease-in-out infinite !important;
+}
+
+/* ===== Slider Container Enhanced ===== */
+
+#hcg-slider-1 .hcg-slide-container {
+    animation: neonCardGlow 5s ease-in-out infinite !important;
+}
+
+/* ===== Scrollbar Neon ===== */
+
+div.wrapper::-webkit-scrollbar {
+    width: 4px !important;
+}
+
+div.wrapper::-webkit-scrollbar-track {
+    background: rgba(0, 212, 255, .05) !important;
+    box-shadow: inset 0 0 4px rgba(0, 212, 255, .15) !important;
+    border-radius: 2px !important;
+}
+
+div.wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--neon-cyan) !important;
+    border-radius: 2px !important;
+    box-shadow: 0 0 6px rgba(0, 212, 255, .5) !important;
+}
+
+/* ===== Block Page Enhanced ===== */
+
+#block .title {
+    color: #ff4444 !important;
+    text-shadow: 0 0 12px rgba(255, 68, 68, .7),
+                 0 0 24px rgba(255, 68, 68, .4) !important;
+}
+
+#block .contact-text {
+    color: var(--neon-text) !important;
+    line-height: 1.8 !important;
+}
+
+#block .app-user span:first-child {
+    color: var(--neon-dim) !important;
+}
+
+#block .app-user span:last-child {
+    color: var(--neon-gold) !important;
+    font-weight: 800 !important;
+    text-shadow: 0 0 8px rgba(242, 201, 76, .5) !important;
+}
+
+#block .wrapper {
+    border-color: rgba(255, 68, 68, .5) !important;
+    box-shadow: 0 0 16px rgba(255, 68, 68, .3) !important;
+    animation: none !important;
+}
+
+/* ===== Status Page Enhanced ===== */
+
+#status .title {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 10px rgba(0, 212, 255, .7),
+                 0 0 20px rgba(0, 212, 255, .4) !important;
+}
+
+#status table td {
+    transition: background-color .2s ease !important;
+}
+
+#status table td:hover {
+    background-color: rgba(0, 212, 255, .1) !important;
+}
+
+/* ===== SweetAlert2 Neon Theme ===== */
+
+.swal2-popup {
+    background: linear-gradient(145deg, #071a33, #050510) !important;
+    border: 1px solid var(--neon-cyan) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 0 20px rgba(0, 212, 255, .4),
+                0 0 40px rgba(0, 212, 255, .15) !important;
+    color: var(--neon-text) !important;
+}
+
+.swal2-popup .swal2-title {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 10px rgba(0, 212, 255, .5) !important;
+}
+
+.swal2-popup .swal2-html-container {
+    color: var(--neon-text) !important;
+}
+
+.swal2-popup .swal2-footer {
+    border-top: 1px solid rgba(0, 212, 255, .2) !important;
+    color: var(--neon-dim) !important;
+}
+
+.swal2-popup button.swal2-confirm {
+    background: linear-gradient(90deg, rgba(0, 212, 255, .3), rgba(0, 212, 255, .1)) !important;
+    color: var(--neon-text) !important;
+    border: 1px solid var(--neon-cyan) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 12px rgba(0, 212, 255, .4) !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    transition: box-shadow .2s, background .2s !important;
+}
+
+.swal2-popup button.swal2-confirm:hover {
+    box-shadow: 0 0 20px rgba(0, 212, 255, .7) !important;
+    background: rgba(0, 212, 255, .35) !important;
+}
+
+.swal2-popup button.swal2-cancel {
+    background: linear-gradient(90deg, rgba(242, 201, 76, .25), rgba(242, 201, 76, .08)) !important;
+    color: var(--neon-gold) !important;
+    border: 1px solid var(--neon-gold) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 12px rgba(242, 201, 76, .4) !important;
+    transition: box-shadow .2s, background .2s !important;
+}
+
+.swal2-popup button.swal2-cancel:hover {
+    box-shadow: 0 0 20px rgba(242, 201, 76, .7) !important;
+    background: rgba(242, 201, 76, .3) !important;
+}
+
+.swal2-popup button.swal2-deny {
+    background: linear-gradient(90deg, rgba(255, 68, 68, .25), rgba(255, 68, 68, .08)) !important;
+    color: #ff8888 !important;
+    border: 1px solid #ff4444 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 12px rgba(255, 68, 68, .4) !important;
+}
+
+.swal2-popup .swal2-icon.swal2-success {
+    border-color: var(--neon-cyan) !important;
+    color: var(--neon-cyan) !important;
+}
+
+.swal2-popup .swal2-icon.swal2-success [class^=swal2-success-line] {
+    background-color: var(--neon-cyan) !important;
+}
+
+.swal2-popup .swal2-icon.swal2-success .swal2-success-ring {
+    border-color: rgba(0, 212, 255, .3) !important;
+}
+
+.swal2-popup .swal2-icon.swal2-error {
+    border-color: #ff4444 !important;
+    color: #ff4444 !important;
+}
+
+.swal2-popup .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+    background-color: #ff4444 !important;
+}
+
+.swal2-popup .swal2-icon.swal2-warning {
+    border-color: var(--neon-gold) !important;
+    color: var(--neon-gold) !important;
+}
+
+.swal2-popup .swal2-icon.swal2-info {
+    border-color: var(--neon-cyan) !important;
+    color: var(--neon-cyan) !important;
+}
+
+.swal2-popup .swal2-icon.swal2-question {
+    border-color: var(--neon-dim) !important;
+    color: var(--neon-dim) !important;
+}
+
+.swal2-popup input.swal2-input,
+.swal2-popup input.swal2-file,
+.swal2-popup textarea.swal2-textarea {
+    background: var(--neon-bg) !important;
+    border: 1px solid var(--neon-cyan) !important;
+    color: var(--neon-text) !important;
+    border-radius: 6px !important;
+    box-shadow: inset 0 0 8px rgba(0, 212, 255, .2) !important;
+}
+
+.swal2-popup input.swal2-input:focus,
+.swal2-popup input.swal2-file:focus,
+.swal2-popup textarea.swal2-textarea:focus {
+    border-color: var(--neon-gold) !important;
+    box-shadow: 0 0 10px rgba(242, 201, 76, .5) !important;
+}
+
+.swal2-popup .swal2-validation-message {
+    background: rgba(0, 212, 255, .1) !important;
+    color: var(--neon-dim) !important;
+    border: 1px solid rgba(0, 212, 255, .3) !important;
+    border-radius: 6px !important;
+}
+
+.swal2-container.swal2-backdrop-show {
+    background: rgba(5, 5, 16, .8) !important;
+}
+
+/* ===== Toast Neon ===== */
+
+.swal2-popup.swal2-toast {
+    background: linear-gradient(145deg, #071a33, #050510) !important;
+    border: 1px solid var(--neon-cyan) !important;
+    box-shadow: 0 0 14px rgba(0, 212, 255, .35) !important;
+    color: var(--neon-text) !important;
+}
+
+.swal2-popup.swal2-toast .swal2-title {
+    color: var(--neon-text) !important;
+}
+
+/* ===== Speed Show-up Enhanced ===== */
+
+#speed-show-wrapper {
+    box-shadow: 0 0 20px rgba(0, 212, 255, .5),
+                0 0 40px rgba(0, 212, 255, .15) !important;
+}
+
+/* ===== Background Grid Enhancement ===== */
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(0, 212, 255, .06), transparent 60%),
+                radial-gradient(ellipse at 50% 100%, rgba(242, 201, 76, .04), transparent 60%);
+}
+
+/* ===== Contact Link Hover ===== */
+
+.contact a {
+    transition: color .2s, text-shadow .2s !important;
+}
+
+.contact a:hover {
+    text-shadow: 0 0 10px rgba(0, 212, 255, .6) !important;
+}
+
+/* ===== Status Extra Buttons Enhanced ===== */
+
+.extra-submit {
+    animation: neonButtonGlow 3s ease-in-out infinite !important;
+}
+
+/* ===== Reduced Motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    .screen,
+    .network-name,
+    .login-submit,
+    .price-icon,
+    .sell-point-icon,
+    .app-store,
+    div.wrapper,
+    .mawlid-banner,
+    .match-info,
+    .jaib-code-box,
+    #login .prince-ad-card,
+    #hcg-slider-1 .hcg-slide-container,
+    .extra-submit {
+        animation: none !important;
+    }
+}
