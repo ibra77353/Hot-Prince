@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="css/fontello.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/mhtrf.css">
-    <link rel="stylesheet" href="css/speed.css">
     <link rel="stylesheet" href="css/mawlid.css">
-    <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/responsive-mawlid.css">
 
 </head>
@@ -29,7 +27,7 @@
         <div class="error-container">
             <div class="error">
                 <div class="fade-in">
-                    <p>حصل خطا!!</p>
+                    <p>حدث خطأ!</p>
                     <p id="error"></p>
                 </div>
             </div>
@@ -83,7 +81,7 @@
                     <form class="login-form" name="login">
 
                         <label class="speed-select">
-                            إختر سرعتك من هنا:
+                            اختر سرعة الاتصال:
                             <select id="speed" name="speed" class="select">
                                 <option value="55987b0d-ca6d-464f-93c8-db9ac4a08888">
                                     سرعة اقتصادية
@@ -99,7 +97,7 @@
 
                         <label class="speed-select">
                             <select id="savedCards" class="select">
-                                <option value="">الكروت المحفوظة</option>
+                                <option value="">البطاقات المحفوظة</option>
                             </select>
                         </label>
 
@@ -109,7 +107,7 @@
                             <input
                                 name="username"
                                 class="login-input"
-                                placeholder="ادخل رمز البطاقة هنا"
+                                placeholder="أدخل رقم البطاقة"
                                 username-field
                                 improve-input
                                 autocomplete="on">
@@ -122,7 +120,7 @@
                                 type="hidden"
                                 name="password"
                                 class="login-input"
-                                placeholder="ادخل كلمة السر هنا"
+                                placeholder="أدخل كلمة المرور"
                                 improve-input>
                         </div>
 
@@ -146,7 +144,7 @@
                             class="button app-submit price-icon"
                             parent-id="price"
                             data-price-button>
-                            الاسعار
+                            الأسعار
                         </button>
 
                         <button
@@ -158,8 +156,7 @@
 
                         <button
                             class="button app-submit sell-point-icon"
-                            parent-id="loan"
-                            data-loan-button>
+                            parent-id="jaib">
                             محفظة جيب
                         </button>
 
@@ -168,7 +165,7 @@
                     <!-- /نهاية أزرار الصفحة الرئيسية -->
 					
 <div class="match-info">
-    المباريات انسخ الرقم وفتحه في المتصفح
+    للمباريات: انسخ الرقم وافتحه في المتصفح
     <span>10.10.10.10</span>
 </div>
 
@@ -203,14 +200,14 @@
 
                         <div class="wrapper">
 
-                            <p class="title">الاسعار</p>
+                            <p class="title">باقات الاشتراك</p>
 
                             <table>
 
                                 <thead>
                                     <tr>
                                         <th scope="col">الفئة</th>
-                                        <th scope="col">الوقت</th>
+                                        <th scope="col">المدة</th>
                                         <th scope="col">الرصيد</th>
                                         <th scope="col">الصلاحية</th>
                                     </tr>
@@ -281,7 +278,7 @@
                         <div class="wrapper">
 
                             <p class="title" id="status-title">
-                                تم تسجيل دخولك بنجاح!
+                                تم تسجيل الدخول بنجاح
                             </p>
 
                             <table>
@@ -294,22 +291,22 @@
                                     </tr>
 
                                     <tr>
-                                        <td>أسم المستخدم</td>
+                                        <td>اسم المستخدم</td>
                                         <td id="username"></td>
                                     </tr>
 
                                     <tr>
-                                        <td>الرفع المستخدم</td>
+                                        <td>الرفع المستهلك</td>
                                         <td id="bytes_in"></td>
                                     </tr>
 
                                     <tr>
-                                        <td>التنزيل المستخدم</td>
+                                        <td>التنزيل المستهلك</td>
                                         <td id="bytes_out"></td>
                                     </tr>
 
                                     <tr remain_bytes_total>
-                                        <td>التحميل المتبقي</td>
+                                        <td>الرصيد المتبقي</td>
                                         <td id="remain_bytes_total"></td>
                                     </tr>
 
@@ -391,16 +388,16 @@
 
                         <div class="wrapper">
 
-                            <p class="title">انت محظور</p>
+                            <p class="title">تم حظر الوصول</p>
 
                             <div style="padding: 25px">
 
                                 <p class="contact-text">
-                                    لقد تم حظرك بسبب محاولات تسجيل الدخول الكثيرة الخاطئة
+                                    تم حظر الوصول بسبب تكرار محاولات الدخول الخاطئة
                                 </p>
 
                                 <div class="app-user">
-                                    <span>بقي على فك الحظر: </span>
+                                    <span>الوقت المتبقي لفك الحظر: </span>
                                     <span count-down-span></span>
                                 </div>
 
@@ -420,39 +417,19 @@
 
                 </div>
 
-                <div class="app" id="app-store">
-
-                    <div class="sell-point-div">
-                        <div class="wrapper" id="grid"></div>
-                    </div>
-
-                    <div class="social-login">
-
-                        <button class="app-logout button app-submit back">
-                            الصفحة السابقة
-                        </button>
-
-                        <h5 class="contact back" data-service-number>
-                            هاتف: {{service-number}}
-                        </h5>
-
-                    </div>
-
-                </div>
-
-                <div class="app" id="loan">
+                <div class="app" id="jaib">
 
                     <div class="sell-point-div">
 
                         <div class="wrapper">
 
-                            <p class="title" style="font-size: 13px;">
-                                💳 شراء كروت البرنس نت عبر محفظة جيب
+                            <p class="title">
+                                💳 محفظة جيب
                             </p>
 
                             <div class="jaib-body">
 
-                                ✅ يمكنك شراء جميع فئات كروت البرنس نت مباشرة عبر تطبيق
+                                ✅ يمكنك شراء جميع فئات بطاقات البرنس نت مباشرة عبر تطبيق
                                 <b>جيب</b> على مدار 24 ساعة.
 
                                 <hr>
@@ -488,7 +465,7 @@
                                 <div class="jaib-back-wrapper">
 
                                     <button class="app-logout button app-submit back">
-                                        صفحة الدخول
+                                        تسجيل الدخول
                                     </button>
 
                                 </div>
@@ -534,7 +511,7 @@
 
                 if (!select) return;
 
-                select.innerHTML = '<option value="">الكروت المحفوظة</option>';
+                select.innerHTML = '<option value="">البطاقات المحفوظة</option>';
 
                 get().forEach(v => {
 
@@ -595,12 +572,12 @@
                     "link": ""
                 },
                 {
-                    "url": "img/pic2.jpg",
+                    "url": "img/pic2.webp",
                     "name": "image 2",
                     "link": ""
                 },
                 {
-                    "url": "img/pic1.jpg",
+                    "url": "img/pic1.webp",
                     "name": "image 3",
                     "link": ""
                 }
@@ -609,7 +586,7 @@
             let slider_id = document.querySelector("#hcg-slider-1");
             if (!slider_id) return;
 
-            // append all images
+            // append all images — first image loads eagerly, others defer via data-src
 
             let dots_div = "";
             let images_div = "";
@@ -624,18 +601,24 @@
                         : ' href="' + images_list[i].link + '"'
                 );
 
+                // First image: load immediately with high priority
+                // Other images: defer via data-src, loaded when slide activates
+                let img_tag;
+                if (i === 0) {
+                    img_tag = '<img src="' + images_list[i].url +
+                        '" loading="eager" fetchpriority="high" alt="' +
+                        images_list[i].name + '">';
+                } else {
+                    img_tag = '<img data-src="' + images_list[i].url +
+                        '" alt="' + images_list[i].name + '">';
+                }
+
                 images_div +=
                     '<a' +
                     href +
                     ' class="hcg-slides animated"' +
                     (i === 0 ? ' style="display:block"' : '') +
-                    '>' +
-                    '<img src="' +
-                    images_list[i].url +
-                    '" alt="' +
-                    images_list[i].name +
-                    '">' +
-                    '</a>';
+                    '>' + img_tag + '</a>';
 
                 dots_div +=
                     '<span class="hcg-slide-dot' +
@@ -652,6 +635,27 @@
 
             let images = slider_id.querySelectorAll(".hcg-slides");
             let dots = slider_id.querySelectorAll(".hcg-slide-dot");
+            let loaded = {};
+
+            // Load a slide's image from data-src if not already loaded
+            function ensureLoaded(index) {
+                if (loaded[index]) return;
+                let img = images[index].querySelector("img");
+                if (img && img.dataset.src) {
+                    img.src = img.dataset.src;
+                    loaded[index] = true;
+                }
+            }
+
+            // Handle image load errors without breaking the slider
+            for (let i = 0; i < images.length; i++) {
+                let img = images[i].querySelector("img");
+                if (img) {
+                    img.addEventListener("error", function () {
+                        this.style.visibility = "hidden";
+                    });
+                }
+            }
 
             function showSlides() {
 
@@ -670,12 +674,16 @@
 
                     if (i == slide_index) {
 
+                        ensureLoaded(i);
                         images[i].style.display = "block";
                         dots[i].classList.add("dot-active");
 
                     }
 
                 }
+
+                // Preload next slide image in background
+                ensureLoaded((+slide_index + 1) % images.length);
 
             }
 
@@ -692,6 +700,9 @@
                 dots[i].addEventListener("click", dot_click, false);
 
             }
+
+            // Preload second slide before first auto-advance (at 2s, well before 5s interval)
+            setTimeout(function () { ensureLoaded(1); }, 2000);
 
             setInterval(function () {
 
@@ -712,7 +723,6 @@
     <script src="js/hotCookie.min.js"></script>
     <script src="js/hotOptions.min.js"></script>
     <script src="js/hotBlocker.min.js"></script>
-    <script src="js/loan.min.js"></script>
 
     <script>
     (function () {
