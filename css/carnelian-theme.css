@@ -86,20 +86,62 @@ div.wrapper {
     border-radius: 13px !important;
 }
 
-/* ===== حقل التاريخ ===== */
+/* ===== حقل التاريخ — شريط ذهبي مزدوج ===== */
 .date-field {
-    background: var(--carnelian-bg) !important;
-    color: var(--carnelian-ivory) !important;
-    border: 1px solid var(--carnelian-border) !important;
-    border-radius: 10px !important;
-    box-shadow: var(--carnelian-shadow) !important;
+    display: inline-flex !important;
+    flex-direction: row !important;
+    direction: rtl !important;
+    align-items: stretch !important;
+    width: max-content !important;
+    max-width: 100% !important;
+    margin-top: 6px !important;
+    padding: 0 !important;
+    background: #2B0D12 !important;
+    border: 1px solid #70451D !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 3px 10px rgba(43,13,18,.15) !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    color: #FFF8EE !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+.date-part {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px 12px !important;
+    color: #FFF8EE !important;
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+    white-space: nowrap !important;
+    display: flex !important;
 }
 .date-gregorian {
-    border-bottom-color: rgba(226,184,104,.45) !important;
-    color: var(--carnelian-pale-gold) !important;
+    display: flex !important;
+    background: #3D1419 !important;
+    border-bottom: none !important;
+    padding-bottom: 10px !important;
+    color: #FFF8EE !important;
 }
 .date-hijri {
-    color: var(--carnelian-ivory) !important;
+    display: flex !important;
+    background: #2B0D12 !important;
+    padding-top: 10px !important;
+    color: #FFF8EE !important;
+}
+.date-separator {
+    width: 2px !important;
+    align-self: stretch !important;
+    flex: none !important;
+    background: linear-gradient(180deg, #70451D, #D4AF6A, #70451D) !important;
+    background-size: 100% 200% !important;
+    animation: gold-glint 3s ease-in-out infinite !important;
+}
+@keyframes gold-glint {
+    0%, 100% { background-position: 0 0; }
+    50% { background-position: 0 100%; }
 }
 
 /* ===== معلومات المباريات ===== */
