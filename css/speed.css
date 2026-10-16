@@ -1,22 +1,19 @@
+/* =========================================================
+   Neon Tech Theme — Speed Showup
+   ========================================================= */
+
 @-webkit-keyframes resize {
-    to {
-        height: 100%;
-    }
+    to { height: 100%; }
+}
+@keyframes resize {
+    to { height: 100%; }
 }
 
-@keyframes resize {
-    to {
-        height: 100%;
-    }
-}
-#allusers option{
-width: 50px;
-}
-#allusers{
-    width: 20px;
-}
+#allusers option { width: 50px; }
+#allusers { width: 20px; }
+
 #speed-show-up label {
-    color: #fff;
+    color: #e8f6ff;
     align-items: center;
     width: 17px;
     font-weight: 300;
@@ -34,40 +31,42 @@ width: 50px;
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    top: 0; bottom: 0; right: 0; left: 0;
     z-index: 1001;
     padding-top: 200px;
     padding-left: 50px;
+    background-color: rgba(5,5,16,.85);
 }
 
 .speedshowupvertical {
-    color: #fff;
+    color: #e8f6ff;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Almarai, sans-serif;
     z-index: 1010;
 }
+
 .showup {
     display: block;
     height: 1%;
     -webkit-animation: resize .3s .0s linear;
-    animation: resize .3s .0s linear
+    animation: resize .3s .0s linear;
 }
+
 #speed-show-wrapper {
-    color: #fff;
+    color: #e8f6ff;
     padding: 17px;
     position: absolute;
-    border-radius: 7px;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid #00d4ff;
+    box-shadow: 0 0 16px rgba(0,212,255,.4);
+    background: linear-gradient(145deg, #071a33, #050510);
     transition: 0.3s;
     width: 90%;
     margin: auto;
     height: 50%;
-    top:20%;
+    top: 20%;
     left: 5%;
     text-align: right;
 }
@@ -75,21 +74,19 @@ width: 50px;
 #speed-show-wrapper .social-login button {
     display: grid;
     place-content: center;
-    color: white;
+    color: #e8f6ff;
     --border-angle: 0turn;
-    --main-bg: conic-gradient(from var(--border-angle), #213, #112 5%, #112 60%, #213 95%);
+    --main-bg: conic-gradient(from var(--border-angle), #071a33, #050510 5%, #050510 60%, #071a33 95%);
     border: solid 2px transparent;
     border-radius: 2em;
-    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #00d4ff, #f2c94c 99%, transparent);
     background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
     background-position: center center;
     animation: bg-spin 3s linear infinite;
 }
 
 @keyframes bg-spin {
-    to {
-        --border-angle: 1turn;
-    }
+    to { --border-angle: 1turn; }
 }
 
 .box:hover {

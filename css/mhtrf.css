@@ -1,53 +1,39 @@
-#alert-back,
-#block,
-.countdown {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
+/* =========================================================
+   Neon Tech Theme — Component Layout & Overrides
+   ========================================================= */
 
 @keyframes fadeInRight {
-    0% {
-    opacity: 0;
-    transform: translateX(20px);
-    }
-    100% {
-    opacity: 1;
-    transform: translateX(0);
-    }
+    0% { opacity: 0; transform: translateX(20px); }
+    100% { opacity: 1; transform: translateX(0); }
 }
 
 .animated {
-    animation-name: fadeInRight;
-    animation-duration: 1s;
+    animation: fadeInRight 1s;
 }
-
 .fadeInRight {
     animation-name: fadeInRight;
 }
 
 select {
-    border: 1px solid;
-    background-color: rgba(255, 255, 255, .8);
-    height: 30px;
-    padding: 3px 20px 3px 40px;
+    border: 1px solid var(--neon-cyan, #00d4ff);
+    background-color: var(--neon-bg, #050510);
+    color: var(--neon-text, #e8f6ff);
+    height: 42px;
+    padding: 0 12px;
     border-radius: 6px;
-    transition: box-shadow .3s ease-in-out;
+    transition: box-shadow .2s, border-color .2s;
+    box-shadow: inset 0 0 8px rgba(0,212,255,.2);
 }
 
-.speedMBT::after {
-    content: "Mbps";
+select:focus-visible {
+    outline: none;
+    border-color: #f2c94c;
+    box-shadow: 0 0 10px rgba(242,201,76,.6);
 }
 
-.speedKBT::after {
-    content: "Kbps";
-}
-
-.speedBT::after {
-    content: "B";
-}
+.speedMBT::after { content: "Mbps"; }
+.speedKBT::after { content: "Kbps"; }
+.speedBT::after { content: "B"; }
 
 #alert-back,
 #block {
@@ -55,13 +41,15 @@ select {
     width: 100%;
     height: 100%;
     padding-top: 200px;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: rgba(5,5,16,.85);
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 1000;
 }
 
 .sell-points:hover,
 input[type=submit]:focus,
 input[type=submit]:hover {
-    background-color: #585858;
+    background-color: rgba(0,212,255,.15);
 }
 
 #mySpeed,
@@ -74,16 +62,19 @@ input[type=submit]:hover {
 #status-3-value,
 #status-4-value,
 #status-5-value {
-    background-color: #3a5b8d;
+    background-color: rgba(0,212,255,.1);
+    color: #e8f6ff;
 }
 
 .osamaUpdatsOn {
-    background-color: red !important;
+    background-color: #ff4444 !important;
 }
 
 .osamaUpdatsOff {
-    background-color: #3a5b8d !important;
+    background-color: rgba(0,212,255,.1) !important;
 }
+
+/* ===== Loan Section ===== */
 
 #loan {
     box-sizing: border-box;
@@ -92,9 +83,7 @@ input[type=submit]:hover {
     overflow-x: hidden;
 }
 
-#loan * {
-    box-sizing: border-box;
-}
+#loan * { box-sizing: border-box; }
 
 #loan .social-login,
 #loan .social-login .back {
@@ -124,41 +113,59 @@ input[type=submit]:hover {
 .jaib-body {
     padding: 10px 4%;
     line-height: 1.9;
-    font-size: clamp(10px, 5vw, 11px);
+    font-size: 12.5px;
+    color: #e8f6ff;
     text-align: right;
     width: 100%;
     word-wrap: break-word;
+}
+
+.jaib-body b {
+    color: #f2c94c;
+}
+
+.jaib-body hr {
+    border: none;
+    border-top: 1px solid rgba(0,212,255,.25);
+    margin: 10px 0;
 }
 
 .jaib-code-box {
     width: 60%;
     max-width: 220px;
     margin: 12px auto;
-    padding: 4px 0;
-    background: #d60000;
-    color: #fff;
-    border-radius: 12px;
-    font-size: clamp(20px, 8vw, 24px);
-    font-weight: bold;
+    padding: 8px 0;
+    border: 1px dashed #f2c94c;
+    color: #f2c94c;
+    border-radius: 6px;
+    font-size: clamp(20px, 8vw, 30px);
+    font-weight: 800;
     text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 0 0 12px rgba(242,201,76,.7);
+    box-shadow: 0 0 14px rgba(242,201,76,.3);
+    background: transparent;
 }
 
 .jaib-contact-label {
-    color: #ff9800;
+    color: #f2c94c;
     font-weight: bold;
 }
 
 .jaib-contact-number {
+    color: #00d4ff;
     font-weight: bold;
 }
 
 .login-input {
-    width: 66% !important;
+    width: 100% !important;
 }
 
 tbody tr td {
-    border: 1px solid #876813;
+    border: 1px solid rgba(0,212,255,.25);
 }
+
+/* ===== Slider ===== */
 
 .hcg-slider {
     width: 100%;
@@ -189,25 +196,25 @@ tbody tr td {
 
 .hcg-slide-dot {
     cursor: pointer;
-    height: 8px;
-    width: 8px;
+    height: 3px;
+    width: 18px;
     margin: 0 3px;
-    background-color: #A8CFC0;
-    border-radius: 50%;
+    background-color: #134a5e;
+    border-radius: 0;
     display: inline-block;
+    transition: background-color .2s;
 }
 
 .hcg-slide-dot.dot-active {
-    background-color: #D4AF37;
-    box-shadow: 0 0 4px rgba(212, 175, 55, .6);
+    background-color: #00d4ff;
+    box-shadow: 0 0 8px #00d4ff;
 }
 
 .hcg-slider-body p.title {
     position: absolute;
     font-size: medium;
     width: 95%;
-    right: 0;
-    left: 0;
+    right: 0; left: 0;
     bottom: 0;
     padding: 2px;
     height: fit-content;
@@ -226,6 +233,8 @@ tbody tr td {
 .sell-point-div {
     height: auto !important;
 }
+
+/* ===== Status Section ===== */
 
 #status .status-div {
     position: static !important;
@@ -280,46 +289,13 @@ tbody tr td {
     display: none !important;
 }
 
-@media (max-width: 380px) {
-    #login .login-actions {
-    gap: 4px;
-    }
-    #login .login-actions .button {
-    font-size: 11px;
-    }
-    #status .status-login-actions,
-    #status .status-extra-actions {
-    gap: 6px;
-    }
-    #status .status-login-actions button,
-    #status .status-extra-actions .extra-submit {
-    height: 40px !important;
-    font-size: 13px;
-    }
-    #status .status-whatsapp {
-    margin-top: 6px !important;
-    }
-}
-
-#hcg-slider-1 .hcg-slides img,
-#hcg-slider-1 .hcg-slides video {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid rgba(34, 211, 238, .45) !important;
-    border-radius: 10px !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .20) !important;
-}
+/* ===== Login Actions (3-button row) ===== */
 
 #login .login-actions {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -328,9 +304,13 @@ tbody tr td {
 #login .login-actions .button {
     position: static !important;
     float: none !important;
-    width: auto !important;
+    width: 100% !important;
     margin: 0 !important;
     flex: 0 1 auto;
+    font-size: 12px;
+    padding: 0 4px;
+    height: 46px;
+    border-radius: 6px !important;
 }
 
 #login #hcg-slider-1 {
@@ -341,6 +321,8 @@ tbody tr td {
 .login-field {
     padding: 14px 0 !important;
 }
+
+/* ===== Status Extra Actions ===== */
 
 #status .status-extra-actions {
     position: static !important;
@@ -375,6 +357,8 @@ tbody tr td {
     max-width: max-content !important;
 }
 
+/* ===== Loan Back Button ===== */
+
 #loan .jaib-back-wrapper {
     display: flex;
     justify-content: center;
@@ -388,23 +372,14 @@ tbody tr td {
     max-width: 300px;
 }
 
-/* =========================================================
-   إعلان البرنس نت العائم — قواعد موحدة بدون تكرار
-   ========================================================= */
+/* ===== Prince Ad Overlay ===== */
 
-/* =========================================================
-   إعلان البرنس نت العائم
-   ========================================================= */
-
-#login {
-    position: relative;
-}
+#login { position: relative; }
 
 #login .prince-ad-overlay {
     position: absolute;
     top: 15px;
-    left: 0;
-    right: 0;
+    left: 0; right: 0;
     z-index: 9999;
     box-sizing: border-box;
     width: 100%;
@@ -424,25 +399,26 @@ tbody tr td {
     overflow: hidden;
     text-align: center;
     direction: rtl;
-    color: #fff;
-    border: 1px solid rgba(243, 215, 120, .95);
-    border-radius: 16px;
+    color: #e8f6ff;
+    border: 1px solid rgba(0,212,255,.6);
+    border-radius: 10px;
     background:
-        radial-gradient(circle at 85% 0%, rgba(212, 175, 55, .16), transparent 42%),
-        linear-gradient(135deg, rgba(8, 16, 31, .99), rgba(20, 43, 76, .99) 58%, rgba(10, 24, 45, .99));
+        radial-gradient(circle at 85% 0%, rgba(0,212,255,.12), transparent 42%),
+        linear-gradient(135deg, rgba(5,5,16,.99), rgba(8,16,38,.99) 58%, rgba(5,5,16,.99));
+    box-shadow: 0 0 14px rgba(0,212,255,.25);
 }
 
 #login .prince-ad-heading {
     margin: 0 0 5px;
-    color: #F3D778;
+    color: #f2c94c;
     font-size: clamp(18px, 3vw, 20px);
     font-weight: 900;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    text-shadow: 0 0 10px rgba(242,201,76,.6);
 }
 
 #login .prince-ad-subtitle {
     margin-bottom: 9px;
-    color: #fff;
+    color: #cfe9f5;
     font-weight: 800;
 }
 
@@ -453,7 +429,7 @@ tbody tr td {
 }
 
 #login .prince-ad-features span {
-    color: #F3D778;
+    color: #f2c94c;
 }
 
 #login .prince-ad-close {
@@ -464,14 +440,14 @@ tbody tr td {
     width: 27px;
     height: 27px;
     padding: 0;
-    border: 1px solid rgba(255, 255, 255, .92);
+    border: 1px solid rgba(255,255,255,.92);
     border-radius: 50%;
-    background: #B4232D;
+    background: #ff4444;
     color: #fff;
     font-size: 24px;
     line-height: 24px;
     font-weight: 900;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .28);
+    box-shadow: 0 0 8px rgba(255,68,68,.4);
     cursor: pointer;
     pointer-events: auto;
 }
@@ -482,7 +458,7 @@ tbody tr td {
     pointer-events: none;
 }
 
-/* بطاقتا الخدمات */
+/* Service cards in ad */
 #login .prince-ad-services {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -495,97 +471,77 @@ tbody tr td {
     box-sizing: border-box;
     min-width: 0;
     padding: 5px 3px;
-    border: 1px solid rgba(212, 175, 55, .8);
-    border-radius: 7px;
-    background: rgba(212, 175, 55, .10);
+    border: 1px solid rgba(0,212,255,.6);
+    border-radius: 6px;
+    background: rgba(0,212,255,.06);
 }
 
 #login .prince-ad-live {
-    border-color: #19b7ed;
-    background: rgba(18, 104, 153, .27);
+    border-color: #f2c94c;
+    background: rgba(242,201,76,.08);
 }
 
 #login .prince-ad-service .prince-ad-wallet-title {
     margin: 0 0 5px;
-    color: #F3D778;
+    color: #00d4ff;
     font-size: 15px;
     line-height: 1.45;
     font-weight: 800;
 }
 
 #login .prince-ad-live .prince-ad-wallet-title {
-    color: #d8f1ff;
+    color: #f2c94c;
 }
 
 #login .prince-ad-service .prince-ad-wallet-text {
     margin: 0;
-    color: #fff;
+    color: #e8f6ff;
     font-size: 11px;
     line-height: 1.55;
 }
 
 #login .prince-ad-service .prince-ad-wallet-note {
     margin-top: 4px;
-    color: #F3D778;
+    color: #f2c94c;
     font-size: 13px;
     line-height: 1.45;
 }
 
 #login .prince-ad-live .prince-ad-wallet-note {
-    color: #c7e7ff;
+    color: #cfe9f5;
 }
 
-/* تذييل الإعلان */
 #login .prince-ad-footer {
     margin-top: 3px;
     padding: 0;
     border: 0;
     border-radius: 0;
     background: transparent;
-    color: #FFE69A;
+    color: #9bd6ea;
     font-size: 11px;
     line-height: 1.5;
     font-weight: 700;
 }
 
-/* الشاشات الصغيرة */
+/* ===== Responsive ===== */
+
 @media (max-width: 380px) {
-    #login .prince-ad-overlay {
-        padding: 5px 7px 0;
+    #login .login-actions { gap: 4px; }
+    #login .login-actions .button { font-size: 11px; }
+    #status .status-login-actions,
+    #status .status-extra-actions { gap: 6px; }
+    #status .status-login-actions button,
+    #status .status-extra-actions .extra-submit {
+        height: 40px !important;
+        font-size: 13px;
     }
-
-    #login .prince-ad-card {
-        min-height: 132px;
-        padding: 13px 9px 10px;
-    }
-
-    #login .prince-ad-features {
-        font-size: 10px;
-    }
-
-    #login .prince-ad-services {
-        gap: 5px;
-    }
-
-    #login .prince-ad-service {
-        padding: 7px 4px;
-    }
-
-    #login .prince-ad-service .prince-ad-wallet-title {
-        font-size: 11px;
-    }
-
-    #login .prince-ad-service .prince-ad-wallet-text {
-        font-size: 9px;
-    }
-
-    #login .prince-ad-service .prince-ad-wallet-note {
-        font-size: 8px;
-    }
+    #status .status-whatsapp { margin-top: 6px !important; }
 }
 
-
 @media (max-width: 380px) {
+    #login .prince-ad-overlay { padding: 5px 7px 0; }
+    #login .prince-ad-card { min-height: 132px; padding: 13px 9px 10px; }
+    #login .prince-ad-features { font-size: 10px; }
     #login .prince-ad-services { gap: 5px; }
     #login .prince-ad-service { padding: 7px 4px; }
     #login .prince-ad-service .prince-ad-wallet-title { font-size: 11px; }

@@ -1,6 +1,5 @@
 /* =========================================================
-   NETWORK RESPONSIVE LAYER
-   Responsive behavior only.
+   Neon Tech Theme — Responsive Layer
    ========================================================= */
 
 html,
@@ -58,8 +57,6 @@ textarea {
         min-height: 0;
     }
 
-
-
     .date-field {
         font-size: clamp(11px, 3.4vw, 14px);
     }
@@ -67,31 +64,20 @@ textarea {
     #hcg-slider-1 .hcg-slide-container {
         width: 90%;
         padding: 6px;
-        border-radius: 14px;
+        border-radius: 10px;
     }
 
-    #login .login-actions {
-        gap: 4px;
-    }
-
-    #login .login-actions .button {
-        font-size: 11px;
-    }
+    #login .login-actions { gap: 4px; }
+    #login .login-actions .button { font-size: 11px; }
 
     #status .status-login-actions,
-    #status .status-extra-actions {
-        gap: 6px;
-    }
-
+    #status .status-extra-actions { gap: 6px; }
     #status .status-login-actions button,
     #status .status-extra-actions .extra-submit {
         height: 40px !important;
         font-size: 13px;
     }
-
-    #status .status-whatsapp {
-        margin-top: 6px !important;
-    }
+    #status .status-whatsapp { margin-top: 6px !important; }
 }
 
 @media (min-width: 381px) and (max-width: 600px) {
