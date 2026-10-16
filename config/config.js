@@ -24,51 +24,42 @@ Config({
     "price-button": true,
     "sell-point-button": true,
     "show-date-field": true,
-    "redirect-to-esterahah": "",// orWithProtocol: ex, https://google.com leave it blank if dont need esterahah button
+    "redirect-to-esterahah": "",
     "redirect-to-mobasher": "http://10.10.10.10",
     "profiles": [
         {
             "price": "100 ريال",
             "time": "5 ساعات",
             "transfer": "350 ميجا",
-            "validity": "مفتوح",
+            "validity": "مفتوح"
         },
-
         {
             "price": "200 ريال",
             "time": "10 ساعات",
-            "transfer":"700 ميجا",
-            "validity": "مفتوح",
+            "transfer": "700 ميجا",
+            "validity": "مفتوح"
         },
-
         {
             "price": "250 ريال",
-            "time": "12 ساعات",
-            "transfer":"800 ميجا",
-            "validity": "مفتوح",
+            "time": "12 ساعة",
+            "transfer": "800 ميجا",
+            "validity": "مفتوح"
         },
-  
         {
             "price": "500 ريال",
             "time": "20 ساعة",
             "transfer": "2000 ميجا",
-            "validity": "مفتوح",
+            "validity": "مفتوح"
         },
-		
-		{
+        {
             "price": "1000 ريال",
             "time": "60 ساعة",
             "transfer": "4000 ميجا",
-            "validity": "مفتوح",
-        },
-
+            "validity": "مفتوح"
+        }
     ],
-     "sell-points": [
-        { "name":"المركز الرئيسي - البرنس نت - مقابل عدن لألمنيوم"},
-        { "name":"جميع الأماكن التي تتوفر فيها التغطية"},
-
+    "sell-points": [
+        { "name": "المركز الرئيسي - البرنس نت - مقابل عدن لألمنيوم" },
+        { "name": "جميع الأماكن التي تتوفر فيها التغطية" }
     ]
 })
-
-
-
