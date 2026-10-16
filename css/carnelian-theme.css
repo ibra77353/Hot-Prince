@@ -1,0 +1,305 @@
+/* =========================================================
+   طراز التاج العقيقي — Carnelian Crown Theme
+   يطبق لغة العنوان على بقية عناصر الصفحة
+   ========================================================= */
+
+:root {
+    --carnelian-bg: #2B0D12;
+    --carnelian-bg-light: #3D1419;
+    --carnelian-bg-deep: #1A0A0E;
+    --carnelian-border: #E2B868;
+    --carnelian-gold-grad: linear-gradient(90deg, #70451D, #B88632 25%, #D4AF6A 50%, #B88632 75%, #70451D);
+    --carnelian-ivory: #FFF8EE;
+    --carnelian-pale-gold: #F3D99F;
+    --carnelian-gold: #D4AF37;
+    --carnelian-dark-gold: #6E431D;
+    --carnelian-shadow: inset 0 1px 0 rgba(255,248,238,.12), 0 3px 10px rgba(43,13,18,.14);
+    --carnelian-font: Georgia, "Times New Roman", serif;
+}
+
+/* ===== الخلفية العامة ===== */
+html, body {
+    background: #1A0A0E !important;
+    background-image:
+        radial-gradient(circle at 18% 12%, rgba(226,184,104,.10) 0 1px, transparent 1.5px),
+        radial-gradient(circle at 82% 30%, rgba(226,184,104,.06) 0 1px, transparent 1.5px),
+        linear-gradient(135deg, #1A0A0E 0%, #2B0D12 48%, #1A0A0E 100%) !important;
+    background-size: 44px 44px, 62px 62px, auto !important;
+}
+
+/* ===== الشاشة الرئيسية ===== */
+.screen {
+    background: linear-gradient(145deg, rgba(43,13,18,.97), rgba(26,10,14,.96)) !important;
+    border: 1.5px solid var(--carnelian-border) !important;
+    box-shadow: var(--carnelian-shadow), 0 16px 44px rgba(0,0,0,.42) !important;
+    border-radius: 20px !important;
+}
+
+/* ===== الأشكال الزخرفية الخلفية ===== */
+.screen-background-shape1 {
+    background: linear-gradient(135deg, #3D1419 0%, #B88632 48%, #2B0D12 100%) !important;
+    box-shadow: 0 0 18px rgba(226,184,104,.14) !important;
+}
+.screen-background-shape2 {
+    background: linear-gradient(135deg, #1A0A0E 8%, #2B0D12 58%, #C09A31 100%) !important;
+    box-shadow: 0 0 14px rgba(226,184,104,.28) !important;
+}
+.screen-background-shape3 {
+    background: linear-gradient(90deg, #2B0D12, #3D1419) !important;
+}
+.screen-background-shape4 {
+    background: linear-gradient(135deg, #B18B2C, #F0D77B) !important;
+    box-shadow: 0 0 14px rgba(226,184,104,.28) !important;
+}
+
+/* ===== شريط إدارة الشبكة ===== */
+.mawlid-banner {
+    background: var(--carnelian-bg) !important;
+    border: 1px solid var(--carnelian-border) !important;
+    box-shadow: var(--carnelian-shadow) !important;
+    border-radius: 10px !important;
+}
+.mawlid-title {
+    color: var(--carnelian-pale-gold) !important;
+    font-family: var(--carnelian-font) !important;
+}
+.mawlid-subtitle {
+    color: var(--carnelian-ivory) !important;
+}
+
+/* ===== عناوين الأقسام ===== */
+.app .title, .title {
+    background: var(--carnelian-gold-grad) !important;
+    color: var(--carnelian-ivory) !important;
+    font-family: var(--carnelian-font) !important;
+    font-weight: 600 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    text-shadow: 0 1px 2px rgba(43,13,18,.6) !important;
+    box-shadow: 0 2px 6px rgba(43,13,18,.18) !important;
+}
+
+/* ===== البطاقات (wrapper) ===== */
+div.wrapper {
+    background: linear-gradient(145deg, rgba(43,13,18,.97), rgba(26,10,14,.96)) !important;
+    border: 1px solid rgba(226,184,104,.34) !important;
+    border-radius: 13px !important;
+}
+
+/* ===== حقل التاريخ ===== */
+.date-field {
+    background: var(--carnelian-bg) !important;
+    color: var(--carnelian-ivory) !important;
+    border: 1px solid var(--carnelian-border) !important;
+    border-radius: 10px !important;
+    box-shadow: var(--carnelian-shadow) !important;
+}
+.date-gregorian {
+    border-bottom-color: rgba(226,184,104,.45) !important;
+    color: var(--carnelian-pale-gold) !important;
+}
+.date-hijri {
+    color: var(--carnelian-ivory) !important;
+}
+
+/* ===== معلومات المباريات ===== */
+.match-info {
+    background: var(--carnelian-bg) !important;
+    border: 1px solid rgba(226,184,104,.5) !important;
+    border-radius: 10px !important;
+    color: var(--carnelian-ivory) !important;
+    box-shadow: var(--carnelian-shadow) !important;
+}
+.match-info span {
+    color: var(--carnelian-pale-gold) !important;
+}
+
+/* ===== الأزرار ===== */
+.app-submit, .login-submit {
+    background: linear-gradient(115deg, var(--carnelian-bg), var(--carnelian-bg-light)) !important;
+    color: var(--carnelian-ivory) !important;
+    border: 1px solid var(--carnelian-border) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 11px rgba(43,13,18,.20) !important;
+    font-family: var(--carnelian-font) !important;
+}
+.app-submit:hover, .login-submit:hover,
+.app-submit:focus, .login-submit:focus,
+.app-submit:active, .login-submit:active {
+    background: linear-gradient(115deg, var(--carnelian-bg-light), #5A1E25) !important;
+    border-color: var(--carnelian-gold) !important;
+}
+.app-submit.processing, .login-submit.processing {
+    background-color: var(--carnelian-gold) !important;
+}
+.button-icon {
+    color: var(--carnelian-pale-gold) !important;
+}
+
+/* ===== حقول الإدخال ===== */
+.login-input {
+    background: rgba(255,248,238,.08) !important;
+    color: var(--carnelian-ivory) !important;
+    border: 1px solid rgba(226,184,104,.5) !important;
+    border-bottom: 2px solid var(--carnelian-gold) !important;
+    border-radius: 10px !important;
+}
+.login-input::placeholder {
+    color: rgba(255,248,238,.45) !important;
+}
+.login-input:focus {
+    border-color: var(--carnelian-border) !important;
+    border-bottom-color: var(--carnelian-pale-gold) !important;
+    box-shadow: 0 0 0 3px rgba(226,184,104,.15) !important;
+    background: rgba(255,248,238,.12) !important;
+}
+.login-icon {
+    color: var(--carnelian-gold) !important;
+}
+
+/* ===== القوائم المنسدلة ===== */
+.select {
+    background: rgba(255,248,238,.92) !important;
+    color: #2B0D12 !important;
+    border: 1px solid var(--carnelian-border) !important;
+    border-radius: 9px !important;
+    box-shadow: 0 1px 4px rgba(43,13,18,.12) !important;
+}
+.select:focus {
+    box-shadow: 0 0 0 2px rgba(226,184,104,.25) !important;
+}
+select {
+    color: #2B0D12 !important;
+}
+
+/* ===== الجداول ===== */
+table td, table th, tbody tr td {
+    background: rgba(43,13,18,.74) !important;
+    color: var(--carnelian-ivory) !important;
+    border-color: rgba(226,184,104,.38) !important;
+}
+thead th {
+    background: rgba(43,13,18,.85) !important;
+    color: var(--carnelian-pale-gold) !important;
+    font-family: var(--carnelian-font) !important;
+}
+tbody tr:hover {
+    background-color: rgba(226,184,104,.15) !important;
+}
+tbody tr:hover td {
+    background: rgba(226,184,104,.12) !important;
+}
+table td:first-child {
+    color: var(--carnelian-pale-gold) !important;
+}
+
+/* ===== معلومات الاتصال ===== */
+.contact {
+    background: linear-gradient(115deg, var(--carnelian-bg), var(--carnelian-bg-light)) !important;
+    color: var(--carnelian-pale-gold) !important;
+    border: 1px solid rgba(226,184,104,.68) !important;
+    border-radius: 9px !important;
+}
+
+/* ===== صندوق كود المحفظة ===== */
+.jaib-code-box {
+    background: var(--carnelian-gold-grad) !important;
+    color: var(--carnelian-ivory) !important;
+    border: 1px solid var(--carnelian-border) !important;
+    border-radius: 12px !important;
+    text-shadow: 0 1px 2px rgba(43,13,18,.6) !important;
+    box-shadow: 0 3px 8px rgba(43,13,18,.18), inset 0 1px 0 rgba(255,248,238,.12) !important;
+    font-family: var(--carnelian-font) !important;
+}
+.jaib-contact-label {
+    color: var(--carnelian-pale-gold) !important;
+}
+.jaib-contact-number {
+    color: var(--carnelian-ivory) !important;
+}
+
+/* ===== إعلان البرنس نت العائم ===== */
+#login .prince-ad-card {
+    background:
+        radial-gradient(circle at 85% 0%, rgba(226,184,104,.16), transparent 42%),
+        linear-gradient(135deg, rgba(43,13,18,.99), rgba(61,20,25,.99) 58%, rgba(26,10,14,.99)) !important;
+    border: 1px solid var(--carnelian-border) !important;
+    border-radius: 16px !important;
+    box-shadow: var(--carnelian-shadow) !important;
+}
+#login .prince-ad-heading {
+    color: var(--carnelian-pale-gold) !important;
+    font-family: var(--carnelian-font) !important;
+}
+#login .prince-ad-subtitle {
+    color: var(--carnelian-ivory) !important;
+}
+#login .prince-ad-close {
+    background: #B4232D !important;
+    border: 1px solid var(--carnelian-border) !important;
+}
+#login .prince-ad-service {
+    border: 1px solid rgba(226,184,104,.4) !important;
+    background: rgba(43,13,18,.6) !important;
+    border-radius: 10px !important;
+}
+#login .prince-ad-wallet-title {
+    color: var(--carnelian-pale-gold) !important;
+}
+#login .prince-ad-wallet-text {
+    color: var(--carnelian-ivory) !important;
+}
+#login .prince-ad-wallet-note {
+    color: rgba(255,248,238,.7) !important;
+}
+#login .prince-ad-footer {
+    color: var(--carnelian-pale-gold) !important;
+}
+
+/* ===== السلايدر ===== */
+#hcg-slider-1 .hcg-slide-container {
+    background: linear-gradient(145deg, var(--carnelian-bg), var(--carnelian-bg-deep)) !important;
+    border: 1px solid var(--carnelian-border) !important;
+    border-radius: 14px !important;
+    box-shadow: var(--carnelian-shadow) !important;
+}
+.hcg-slide-dot {
+    background-color: rgba(255,248,238,.3) !important;
+}
+.hcg-slide-dot.dot-active {
+    background-color: var(--carnelian-gold) !important;
+    box-shadow: 0 0 5px rgba(226,184,104,.55) !important;
+}
+#hcg-slider-1 .hcg-slides img,
+#hcg-slider-1 .hcg-slides video {
+    border: 1px solid rgba(226,184,104,.6) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 5px 16px rgba(43,13,18,.2) !important;
+}
+
+/* ===== شريط التمرير ===== */
+div.wrapper::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, var(--carnelian-bg), var(--carnelian-bg-light)) !important;
+    outline: 1px solid rgba(226,184,104,.34) !important;
+}
+
+/* ===== قسم الحظر ===== */
+.error-container .error .fade-in {
+    background-color: var(--carnelian-bg) !important;
+    border: 1px solid var(--carnelian-border) !important;
+    color: var(--carnelian-ivory) !important;
+    border-radius: 15px !important;
+}
+.error {
+    color: #D64545 !important;
+    background-color: rgba(43,13,18,.34) !important;
+}
+
+/* ===== روابط الواتساب ===== */
+#status .status-whatsapp .contact a {
+    color: #25D366 !important;
+}
+#status .status-whatsapp .contact a:hover,
+#status .status-whatsapp .contact a:focus {
+    color: #128C7E !important;
+}
