@@ -243,6 +243,28 @@ table td:first-child {
     border-radius: 9px !important;
 }
 
+/* ===== أزرار الصفحة الرئيسية (الأسعار، نقاط البيع، محفظة جيب) ===== */
+.login-actions .button {
+    background: linear-gradient(115deg, var(--carnelian-bg), var(--carnelian-bg-light)) !important;
+    color: var(--carnelian-pale-gold) !important;
+    border: 1px solid var(--carnelian-border) !important;
+    border-radius: 100px !important;
+    box-shadow: inset 0 1px 0 rgba(255,248,238,.12), 0 3px 8px rgba(43,13,18,.18) !important;
+    font-family: var(--carnelian-font) !important;
+    font-weight: 600 !important;
+    letter-spacing: .3px !important;
+    text-shadow: 0 1px 2px rgba(43,13,18,.5) !important;
+    transition: all .3s ease !important;
+}
+.login-actions .button:hover,
+.login-actions .button:focus,
+.login-actions .button:active {
+    background: linear-gradient(115deg, var(--carnelian-bg-light), #5A1E25) !important;
+    border-color: var(--carnelian-gold) !important;
+    box-shadow: inset 0 1px 0 rgba(255,248,238,.15), 0 4px 12px rgba(43,13,18,.22) !important;
+    color: var(--carnelian-ivory) !important;
+}
+
 /* ===== صندوق كود المحفظة ===== */
 .jaib-code-box {
     background: var(--carnelian-gold-grad) !important;
