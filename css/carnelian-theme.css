@@ -52,21 +52,6 @@ html, body {
     box-shadow: 0 0 14px rgba(226,184,104,.28) !important;
 }
 
-/* ===== شريط إدارة الشبكة ===== */
-.mawlid-banner {
-    background: var(--carnelian-bg) !important;
-    border: 1px solid var(--carnelian-border) !important;
-    box-shadow: var(--carnelian-shadow) !important;
-    border-radius: 10px !important;
-}
-.mawlid-title {
-    color: var(--carnelian-pale-gold) !important;
-    font-family: var(--carnelian-font) !important;
-}
-.mawlid-subtitle {
-    color: var(--carnelian-ivory) !important;
-}
-
 /* ===== عناوين الأقسام ===== */
 .app .title, .title {
     background: var(--carnelian-gold-grad) !important;

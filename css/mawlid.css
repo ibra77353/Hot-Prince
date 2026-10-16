@@ -86,20 +86,7 @@ box-shadow: 0 4px 10px rgba(10,8,20,.22) !important}
 .app-submit:hover,.login-submit:hover,.app-submit:focus,.login-submit:focus{background: linear-gradient(
 90deg,#454545,#555555
 ) !important}
-.mawlid-banner{position: relative;
-z-index: 6;
-display: table;
-width: fit-content;
-max-width: calc(100% - 20px);
-margin: 3px 2px;
-padding: 4px 12px;
-box-sizing: border-box;
-border-radius: 30px;
-text-align: center;
-color: var(--mawlid-cream);
-background: linear-gradient(135deg,rgba(15,10,30,.98),rgba(50,50,50,.97)) !important;
-border: 1px solid rgba(212,175,55,.78) !important;
-box-shadow: 0 5px 16px rgba(10,8,20,.22),inset 0 1px 0 rgba(255,255,255,.09) !important}
+
 .price-icon,.sell-point-icon,.app-store{border-color: var(--mawlid-gold) !important}
 .contact{background: linear-gradient(
 90deg,#2D2D2D,#454545
@@ -186,7 +173,7 @@ box-shadow: 0 4px 11px rgba(10,8,20,.20) !important}
 .login-submit .button-icon{color: #F3D778 !important}
 .contact{background: linear-gradient(115deg,#222222,#3D3D3D) !important;
 border-color: rgba(212,175,55,.68) !important}
-.mawlid-banner,.login-actions .button,.login-submit,#hcg-slider-1 .hcg-slides img{-webkit-tap-highlight-color: transparent}
+.login-actions .button,.login-submit,#hcg-slider-1 .hcg-slides img{-webkit-tap-highlight-color: transparent}
 #hcg-slider-1 .hcg-slides img{border: 1px solid rgba(212,175,55,.6) !important;
 border-radius: 12px !important;
 box-shadow: 0 5px 16px rgba(0,0,0,.2) !important}
