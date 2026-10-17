@@ -121,6 +121,7 @@ padding: 16px 20px;
 border-radius: 10px;
 text-transform: uppercase;
 font-weight: 700;
+font-size: 15px;
 color: #F7F9FC;
 display: flex;
 align-items: center;
@@ -132,7 +133,7 @@ background: linear-gradient(115deg,#222222,#3D3D3D);
 border: 1px solid rgba(212,175,55,.8);
 text-align: center;
 width: auto;
-height: 44px;
+height: 48px;
 transition: background .3s ease-in-out}
 .app-submit.processing,.login-submit.processing{opacity: .8;
 border: 0;
@@ -153,7 +154,7 @@ animation: none}
 .app-submit:active,.app-submit:focus,.app-submit:hover,.login-submit:active,.login-submit:focus,.login-submit:hover{background: linear-gradient(115deg,#3D3D3D,#555555);
 border-color: #6B6B6B;
 outline: 0}
-.button-icon{font-size: 24px;
+.button-icon{font-size: 26px;
 margin-left: auto;
 color: #F3D778}
 .social-login{height: auto;
@@ -185,7 +186,7 @@ text-align:center;
 overflow:hidden}
 .network-prefix{box-sizing:border-box;
 width:100%;
-min-height:20px;
+min-height:22px;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -193,7 +194,7 @@ border-radius:4px;
 background:linear-gradient(90deg,#70451D,#B88632 25%,#D4AF6A 50%,#B88632 75%,#70451D);
 color:#FFF8EE;
 font-family:Georgia,"Times New Roman",serif;
-font-size:18px;
+font-size:20px;
 font-weight:600;
 line-height:1.1;
 letter-spacing:.3px;
@@ -202,7 +203,7 @@ margin:0}
 .network-name{width:100%;
 color:#F3D99F;
 font-family:Georgia,"Times New Roman",serif;
-font-size:27px;
+font-size:29px;
 font-weight:700;
 line-height:1.15;
 letter-spacing:.2px;
@@ -272,10 +273,10 @@ select::-ms-expand{display: none}
 .select{position: relative;
 border: 1px solid #C6A13A;
 border-radius: 9px;
-padding: 0.2em 0.3em;
+padding: 0.3em 0.4em;
 cursor: pointer;
-line-height: 1.1;
-font-size: 12px;
+line-height: 1.2;
+font-size: 14px;
 box-shadow: 0 1px 4px rgba(60,60,60,.12);
 color: #18243A;
 background: rgba(247,249,252,.94)}
@@ -329,7 +330,7 @@ background: rgba(60,60,60,.74);
 padding: 10px 4px 10px 0}
 table td:first-child{font-weight: 700}
 tbody td:hover:before,td,th{background-color: rgba(255,255,255,.2)}
-td,th{font-size: 12px;
+td,th{font-size: 14px;
 padding: 15px;
 background: rgba(60,60,60,.74);
 border-bottom: 2px solid rgba(212,175,55,.38);
@@ -338,7 +339,7 @@ tbody tr:last-child td{border-bottom: 2px solid rgba(212,175,55,.38)}
 .info,tbody td,th{text-align: center}
 thead th{background: rgba(60,60,60,.74)}
 tbody tr:hover{background-color: #D4AF37}
-.sell-point td{font-size: 13px}
+.sell-point td{font-size: 14px}
 tbody td:hover:before{content: "";
 left: 0;
 right: 0;
@@ -348,7 +349,7 @@ z-index: -1}
 .title{border-radius: 12px;
 padding: 8px;
 font-weight: 900;
-font-size: 20px;
+font-size: 22px;
 color: #F7F9FC;
 background: linear-gradient(90deg,#2D2D2D,#454545);
 border: 1px solid rgba(212,175,55,.60);
@@ -370,7 +371,7 @@ height: 30px;
 font-size: 15px}
 .section .marquee:hover{animation-play-state: paused}
 .extra-submit{width: 80%;
-height: 44px}
+height: 48px}
 .extra-submit:last-child{margin-top: 10px;
 right: 20%}
 .date-field{display: inline-flex;

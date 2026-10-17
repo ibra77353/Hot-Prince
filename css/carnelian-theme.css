@@ -88,7 +88,7 @@ div.wrapper {
     box-shadow: 0 3px 10px rgba(43,13,18,.15) !important;
     font-family: Georgia, "Times New Roman", serif !important;
     color: #FFF8EE !important;
-    font-size: 10px !important;
+    font-size: 11.5px !important;
     font-weight: 700 !important;
     text-align: center !important;
 }
@@ -98,7 +98,7 @@ div.wrapper {
     justify-content: center !important;
     padding: 10px 12px !important;
     color: #FFF8EE !important;
-    font-size: 10px !important;
+    font-size: 11.5px !important;
     line-height: 1.4 !important;
     white-space: nowrap !important;
     display: flex !important;
@@ -109,12 +109,14 @@ div.wrapper {
     border-bottom: none !important;
     padding-bottom: 10px !important;
     color: #FFF8EE !important;
+    font-size: 11.5px !important;
 }
 .date-hijri {
     display: flex !important;
     background: #2B0D12 !important;
     padding-top: 10px !important;
     color: #FFF8EE !important;
+    font-size: 11.5px !important;
 }
 .date-separator {
     width: 2px !important;
@@ -141,7 +143,7 @@ div.wrapper {
     color: var(--carnelian-ivory) !important;
     box-shadow: inset 0 1px 0 rgba(255,248,238,.10), 0 3px 10px rgba(43,13,18,.22) !important;
     font-family: var(--carnelian-font) !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     font-weight: 600 !important;
     letter-spacing: .3px !important;
     text-shadow: 0 1px 2px rgba(43,13,18,.5) !important;
@@ -246,7 +248,7 @@ div.wrapper {
     gap: 6px !important;
     color: var(--carnelian-pale-gold) !important;
     font-family: var(--carnelian-font) !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     font-weight: 600 !important;
     margin-bottom: 6px !important;
     text-shadow: 0 1px 2px rgba(43,13,18,.5) !important;
@@ -548,7 +550,7 @@ div.wrapper::-webkit-scrollbar-thumb {
     box-sizing: border-box !important;
     margin: 0 0 7px !important;
     padding: 7px 5px !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
     line-height: 1.2 !important;
     font-weight: 700 !important;
     color: #fff4d9 !important;
@@ -561,7 +563,7 @@ div.wrapper::-webkit-scrollbar-thumb {
     width: 100% !important;
     border-collapse: separate !important;
     border-spacing: 0 3px !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.2 !important;
 }
 #status td {
@@ -600,13 +602,13 @@ div.wrapper::-webkit-scrollbar-thumb {
     min-width: 0 !important;
     width: auto !important;
     max-width: none !important;
-    height: 38px !important;
+    height: 42px !important;
     padding: 5px 4px !important;
     border: 1px solid rgba(255,224,152,.82) !important;
     border-radius: 10px !important;
     background: linear-gradient(135deg, #f5d77c 0%, #bd842d 48%, #f0c65f 100%) !important;
     color: #38151a !important;
-    font: 700 13px Georgia, serif !important;
+    font: 700 14px Georgia, serif !important;
     text-shadow: 0 1px rgba(255,255,255,.38) !important;
     box-shadow: 0 3px 10px rgba(0,0,0,.28), 0 0 11px rgba(243,201,115,.2) !important;
     cursor: pointer !important;
@@ -629,7 +631,7 @@ div.wrapper::-webkit-scrollbar-thumb {
 }
 #status .status-whatsapp {
     box-sizing: border-box !important;
-    min-height: 38px !important;
+    min-height: 42px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -648,7 +650,7 @@ div.wrapper::-webkit-scrollbar-thumb {
     gap: 5px !important;
     margin: 0 !important;
     color: #fff2d6 !important;
-    font-size: 13px !important;
+    font-size: 14px !important;
     line-height: 1.3 !important;
 }
 #status .status-whatsapp .contact a {
